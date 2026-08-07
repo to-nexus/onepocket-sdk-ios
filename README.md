@@ -314,6 +314,7 @@ See [Examples/CROSSxSample/README.md](Examples/CROSSxSample/README.md) for detai
 |---|---|
 | `crossy-sdk-ios-develop` | Source development, tests, CI/CD (this repo) |
 | `crossx-sdk-ios` | xcframework binary distribution (SPM / CocoaPods) |
+| `onepocket-sdk-ios` | Same binaries, mirrored for the ONEpocket brand |
 
 ### Release Process
 
@@ -346,8 +347,8 @@ git add -A && git commit -m "chore: version x.y.z"
 After the tag is pushed, GitHub Actions automatically:
 1. Runs all tests (`CROSSxCoreSDK` + `CrossWebAuthKit`)
 2. Builds xcframeworks (`CROSSxSDK.xcframework`, `CrossWebAuthKit.xcframework`)
-3. Copies xcframeworks to the distribution repo (`crossx-sdk-ios`) and updates version
-4. Creates GitHub Releases in both repositories
+3. Copies xcframeworks to every distribution repo (`crossx-sdk-ios`, `onepocket-sdk-ios`) and updates version
+4. Creates GitHub Releases in the source repo and in every distribution repo
 
 Beta tags are created as GitHub prereleases and are not marked as the latest release. When installing a beta, specify the exact version in both Swift Package Manager and CocoaPods.
 
