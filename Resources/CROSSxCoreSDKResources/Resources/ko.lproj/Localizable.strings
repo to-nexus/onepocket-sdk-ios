@@ -1,0 +1,199 @@
+/* CROSSxCoreSDK – 한국어 */
+
+// =============================================================================
+// MARK: - 지갑 선택
+// =============================================================================
+
+"wallet_selector.title" = "연결된 지갑 선택";
+"wallet_selector.description" = "이전에 이 게임에서 사용한 지갑을 선택해 주세요.";
+"wallet_selector.close" = "닫기";
+"wallet_selector.info_title" = "왜 지갑을 선택해야 하나요?";
+"wallet_selector.info_description" = "이전에 연결된 지갑을 확인하면 기존 데이터와 자산이 올바르게 동기화됩니다.";
+"wallet_selector.selected_badge" = "선택됨";
+"wallet_selector.add_wallet" = "지갑 추가";
+
+// =============================================================================
+// MARK: - 트랜잭션 확인
+// =============================================================================
+
+"tx_confirm.approve_title" = "트랜잭션 승인";
+"tx_confirm.approve_description_format" = "%@이(가) 다음 트랜잭션 승인을 요청합니다.";
+"tx_confirm.approve_button" = "승인";
+"tx_confirm.confirm_button" = "확인";
+"tx_confirm.label_to" = "받는 주소";
+"tx_confirm.label_from" = "보내는 주소";
+"tx_confirm.label_network" = "네트워크";
+"tx_confirm.label_est_tx_fee" = "예상 수수료";
+"tx_confirm.label_max_priority_fee" = "최대 우선 수수료";
+"tx_confirm.label_max_gas_fee" = "최대 가스 수수료";
+"tx_confirm.label_gas_price" = "가스 가격";
+"tx_confirm.label_gas_limit" = "가스 한도";
+"tx_confirm.label_transfer" = "전송량";
+"tx_confirm.label_tx_hash" = "Tx 해시";
+"tx_confirm.label_tx_fee" = "수수료";
+"tx_confirm.label_total" = "합계";
+"tx_confirm.label_including_fees" = "(수수료 포함)";
+"tx_confirm.label_primary_type" = "Primary Type";
+"tx_confirm.label_data" = "데이터";
+
+// =============================================================================
+// MARK: - 트랜잭션 흐름
+// =============================================================================
+
+"tx_flow.sending_title" = "트랜잭션 전송 중";
+"tx_flow.sending_message" = "트랜잭션을 처리하고 있습니다...";
+"tx_flow.waiting_title" = "확인 대기 중";
+"tx_flow.waiting_message" = "트랜잭션 영수증을 기다리는 중...";
+"tx_flow.complete_title" = "트랜잭션 완료";
+"tx_flow.failed_title" = "트랜잭션 실패";
+"tx_flow.done_button" = "완료";
+"tx_flow.all_done_button" = "모두 완료";
+
+// =============================================================================
+// MARK: - 서명 요청
+// =============================================================================
+
+"signature.request_title" = "서명 요청";
+"signature.requesting_format" = "%@이(가) 서명을 요청합니다";
+"signature.warning" = "서명 후에는 변경하거나 취소할 수 없습니다.";
+"signature.cancel_button" = "취소";
+"signature.confirm_button" = "확인";
+"signature.sign_button" = "서명";
+
+// =============================================================================
+// MARK: - 로그인
+// =============================================================================
+
+"login.welcome_title" = "환영합니다";
+"login.creating_wallet" = "ONEwallet 임베디드 지갑 생성";
+"login.sign_in_apple" = "Apple로 로그인";
+"login.sign_in_google" = "Google로 로그인";
+"login.terms_prefix" = "계속 진행하면 NEXUS ";
+"login.terms_of_service" = "이용약관";
+"login.terms_middle" = "에 동의하고 ";
+"login.privacy_policy" = "개인정보 처리방침에 동의하게 됩니다.";
+
+// =============================================================================
+// MARK: - PIN (지갑 비밀번호)
+// =============================================================================
+
+"pin.consent_notice_title" = "PIN 설정 주의사항";
+"pin.consent_notice_description" = "보안을 위해 이 PIN은 재설정하거나 복구할 수 없습니다. 반드시 기억하거나 안전한 곳에 보관해 두세요.";
+"pin.consent_item1" = "이 PIN을 분실하면 지갑과 자산에 영구적으로 접근할 수 없게 됨을 이해합니다.";
+"pin.consent_item2" = "고객 지원팀을 포함한 누구도 이 PIN을 복구하거나 재설정할 수 없음을 이해합니다.";
+"pin.consent_button" = "확인했습니다";
+
+"pin.create_title" = "PIN 생성";
+"pin.enter_title" = "PIN 확인";
+"pin.create_subtitle" = "이 PIN은 거래 승인에 사용됩니다.";
+"pin.enter_subtitle" = "거래 승인을 위해 PIN을 입력해 주세요.";
+"pin.create_hint" = "거래 승인을 위한 6자리 PIN을 설정하세요.";
+"pin.confirm_hint" = "6자리 PIN을 다시 입력하세요";
+"pin.enter_hint" = "6자리 PIN을 입력하세요";
+"pin.mismatch" = "PIN이 일치하지 않습니다. 다시 시도해 주세요.";
+"pin.validation_consecutive" = "동일한 숫자를 3회 이상 연속으로 사용할 수 없습니다.";
+"pin.validation_sequential" = "연속된 숫자(예: 123456)는 사용할 수 없습니다.";
+"pin.validation_pattern" = "반복 패턴(예: 121212)은 사용할 수 없습니다.";
+"pin.incorrect" = "PIN이 올바르지 않습니다. 다시 시도해 주세요.";
+"pin.failure_warning" = "추가 실패 시 계정이 잠깁니다.";
+"pin.attempt_count" = "%1$d / %2$d회 시도";
+"pin.locked_warning" = "잘못된 입력이 너무 많습니다. %@ 이후 다시 시도해 주세요.";
+"pin.locked_notice" = "잠금이 해제된 후 다시 시도해 주세요.";
+"pin.locked_available" = "%@";
+"pin.locked_available_from" = "(%@ 이후 이용 가능)";
+"pin.locked_permanent" = "계정이 영구 잠금되었습니다. 고객센터에 문의해 주세요.";
+"pin.locked_temporary" = "일시적으로 잠금되었습니다. 잠시 후 다시 시도해 주세요.";
+
+"password.next_button" = "다음";
+"password.biometric_prompt" = "지갑에 접근하려면 인증해 주세요";
+
+// =============================================================================
+// MARK: - 마이그레이션
+// =============================================================================
+
+"migration.found_title" = "소셜 계정에서 지갑 발견 🎉";
+"migration.found_subtitle" = "소셜 계정에 연결된 지갑을 발견했습니다.\n4자리 PIN을 입력하여 자산을 복원하세요.";
+"migration.recovery_title" = "복구 지갑이란?";
+"migration.recovery_description" = "이전의 모든 자산을 안전하게 복원하고 통합합니다. PIN을 인증하기만 하면 시작할 수 있습니다.";
+"migration.recover_button" = "내 지갑 복구";
+"migration.skip_button" = "나중에 하기";
+"migration.pin_title" = "내 지갑 복구";
+"migration.pin_loading" = "지갑 복구 중...";
+"migration.pin_helper" = "지갑 복구를 위해 4자리 PIN을 입력하세요.";
+"migration.pin_incorrect" = "PIN이 올바르지 않습니다. 다시 시도해 주세요.";
+"migration.pin_remaining_attempts" = "PIN이 올바르지 않습니다. 남은 시도 횟수: %d회";
+"migration.pin_failure_warning" = "추가 실패 시 계정이 잠깁니다.";
+"migration.pin_attempt_count" = "%1$d / %2$d회 시도";
+"migration.pin_locked_warning" = "잠금이 해제된 후 다시 시도해 주세요.";
+"migration.pin_locked_available" = "(%@ 이후 이용 가능)";
+"migration.pin_locked_temporary" = "시도 횟수를 초과했습니다. %@ 후에 다시 시도해 주세요.";
+"migration.pin_locked_permanent" = "시도 횟수 초과로 계정이 영구 잠금되었습니다.";
+
+// =============================================================================
+// MARK: - CROSSxError
+// =============================================================================
+
+"error.crossx.invalid_config" = "잘못된 설정: %@";
+"error.crossx.configuration_missing" = "SDK 설정 누락 [%@]: %@";
+"error.crossx.not_initialized" = "SDK가 초기화되지 않았습니다";
+"error.crossx.not_authenticated" = "인증되지 않았습니다";
+"error.crossx.auth_failed" = "인증 실패: %@";
+"error.crossx.token_expired" = "토큰이 만료되었습니다";
+"error.crossx.session_expired" = "세션이 만료되었습니다. 다시 로그인해 주세요.";
+"error.crossx.user_rejected" = "사용자가 요청을 거부했습니다";
+"error.crossx.sign_failed" = "서명 실패: %@";
+"error.crossx.transaction_failed" = "트랜잭션 실패: %@";
+"error.crossx.cloud_backup_check_failed" = "클라우드 백업 확인 실패: %@";
+"error.crossx.network_error" = "네트워크 오류: %@";
+"error.crossx.unknown" = "알 수 없는 오류: %@";
+"error.crossx.not_implemented" = "구현되지 않았습니다";
+"error.crossx.prepare_failed" = "Prepare 실패: %@";
+"error.crossx.prepare_expired" = "Prepare UUID가 만료되었습니다. 다시 시도해 주세요.";
+"error.crossx.prepare_mismatch" = "Prepare 파라미터 불일치: %@";
+"error.crossx.migration_backup_exists" = "기존 지갑 백업이 발견되었습니다. 마이그레이션이 필요합니다.";
+"error.crossx.migration_failed" = "마이그레이션 실패: %@";
+"error.crossx.migration_required" = "기존 지갑 백업이 발견되어 마이그레이션이 필요합니다. createWallet(migrateAutomatically: true)를 호출하여 진행하세요.";
+"error.crossx.unsupported_chain" = "지원하지 않는 체인: %@";
+"error.crossx.invalid_chain_id" = "잘못된 체인 ID: %@";
+"error.crossx.project_not_registered" = "등록되지 않은 프로젝트 또는 앱: %@";
+"error.crossx.project_id_missing" = "X-Project-Id 헤더가 누락되었습니다. SDKConfig에서 projectId를 설정하세요.";
+"error.crossx.app_identifier_missing" = "X-App-Id 헤더가 누락되었습니다. Bundle Identifier를 확인하세요.";
+"error.crossx.invalid_app_type" = "잘못된 X-App-Type 값: %@";
+"error.crossx.domain_chain_id_mismatch" = "도메인 chainId 불일치: %@";
+"error.crossx.password_wrong" = "PIN이 올바르지 않습니다.";
+"error.crossx.password_too_weak" = "PIN은 6자리 숫자여야 합니다.";
+"error.crossx.password_repeated_pattern" = "반복 숫자 패턴(예: 121212)은 사용할 수 없습니다.";
+"error.crossx.user_reject" = "PIN 입력이 취소되었습니다.";
+"error.crossx.biometric_failed" = "생체 인증에 실패했습니다. 다시 시도하거나 PIN을 입력해 주세요.";
+"error.crossx.password_locked_temporary" = "PIN 입력 실패 횟수를 초과했습니다. %@ 이후에 다시 시도해 주세요.";
+"error.crossx.password_locked_permanent" = "PIN 입력 실패 횟수 초과로 계정이 영구 잠금되었습니다.";
+"error.crossx.password_locked_attempts" = "PIN이 올바르지 않습니다. 남은 시도 횟수: %d회";
+"error.crossx.wallet_inconsistent_state" = "지갑 상태가 비정상입니다. 고객 지원에 문의해 주세요.";
+"error.crossx.hmac_signature_missing" = "이 API에는 X-HMAC-Signature 헤더가 필요합니다.";
+"error.crossx.hmac_signature_invalid" = "HMAC 서명 검증에 실패했습니다.";
+"error.crossx.hmac_key_not_configured" = "HMAC 키가 설정되지 않았습니다. CROSSxPrivateSDK 초기화 시 hmacKey를 설정하세요.";
+"error.crossx.request_binding_failed" = "요청 바인딩 실패: %@";
+"error.crossx.internal_server_error" = "내부 서버 오류: %@";
+"error.crossx.wallet_already_exists" = "이 계정에 이미 지갑이 존재합니다.";
+"error.crossx.wallet_not_found" = "지갑을 찾을 수 없습니다.";
+"error.crossx.signer_communication_failed" = "서명자 통신 실패: %@";
+"error.crossx.broadcast_failed" = "트랜잭션 브로드캐스트 실패: %@";
+"error.crossx.operation_in_progress" = "다른 작업이 진행 중입니다. 잠시 후 다시 시도해 주세요.";
+"error.crossx.address_not_found_in_cache" = "캐시에서 주소를 찾을 수 없습니다: %@";
+"error.crossx.withdraw_failed" = "출금 실패: %@";
+"error.crossx.migration_max_index_exceeded" = "maxIndex는 0에서 10 사이여야 합니다: %@";
+"error.crossx.invalid_address_name" = "주소 이름 검증 실패: %@";
+"error.crossx.api_error" = "API 오류: %@";
+
+// =============================================================================
+// MARK: - OAuthError
+// =============================================================================
+
+"error.oauth.user_cancelled" = "사용자가 로그인을 취소했습니다";
+"error.oauth.auth_session_failed" = "인증 세션 실패: %@";
+"error.oauth.failed_to_start" = "인증 세션을 시작하지 못했습니다";
+"error.oauth.no_callback_url" = "콜백 URL을 받지 못했습니다";
+"error.oauth.invalid_callback" = "잘못된 콜백: %@";
+"error.oauth.no_token" = "응답에 토큰이 없습니다";
+"error.oauth.server_error" = "서버 오류 [%@]: %@";
+"error.oauth.session_deallocated" = "인증 세션이 해제되었습니다";

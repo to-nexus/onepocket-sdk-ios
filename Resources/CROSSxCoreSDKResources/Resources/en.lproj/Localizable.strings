@@ -1,0 +1,199 @@
+/* CROSSxCoreSDK – English (Base) */
+
+// =============================================================================
+// MARK: - Wallet Selector
+// =============================================================================
+
+"wallet_selector.title" = "Select Wallet";
+"wallet_selector.description" = "Please select the wallet you previously used for this game to continue.";
+"wallet_selector.close" = "Close";
+"wallet_selector.info_title" = "Why do I need to select a wallet?";
+"wallet_selector.info_description" = "Identifying your previously linked wallet ensures your data and assets are synced correctly.";
+"wallet_selector.selected_badge" = "Selected";
+"wallet_selector.add_wallet" = "Add Wallet";
+
+// =============================================================================
+// MARK: - Transaction Confirm
+// =============================================================================
+
+"tx_confirm.approve_title" = "Send Transaction";
+"tx_confirm.approve_description_format" = "%@ wants your permission to approve the following transaction.";
+"tx_confirm.approve_button" = "Approve";
+"tx_confirm.confirm_button" = "Confirm";
+"tx_confirm.label_to" = "To";
+"tx_confirm.label_from" = "From";
+"tx_confirm.label_network" = "Network";
+"tx_confirm.label_est_tx_fee" = "Est. Tx Fee";
+"tx_confirm.label_max_priority_fee" = "Max Priority Fee Per Gas";
+"tx_confirm.label_max_gas_fee" = "Max Gas Fee";
+"tx_confirm.label_gas_price" = "Gas Price";
+"tx_confirm.label_gas_limit" = "Gas Limit";
+"tx_confirm.label_transfer" = "Transfer";
+"tx_confirm.label_tx_hash" = "Tx Hash";
+"tx_confirm.label_tx_fee" = "Tx Fee";
+"tx_confirm.label_total" = "Total";
+"tx_confirm.label_including_fees" = "(including fees)";
+"tx_confirm.label_primary_type" = "Primary Type";
+"tx_confirm.label_data" = "Data";
+
+// =============================================================================
+// MARK: - Transaction Flow
+// =============================================================================
+
+"tx_flow.sending_title" = "Sending transaction";
+"tx_flow.sending_message" = "Processing your transaction...";
+"tx_flow.waiting_title" = "Waiting for confirmation";
+"tx_flow.waiting_message" = "Waiting for transaction receipt...";
+"tx_flow.complete_title" = "Transaction completed";
+"tx_flow.failed_title" = "Transaction failed";
+"tx_flow.done_button" = "Done";
+"tx_flow.all_done_button" = "All Done";
+
+// =============================================================================
+// MARK: - Signature Request
+// =============================================================================
+
+"signature.request_title" = "Signature Request";
+"signature.requesting_format" = "%@ is requesting a Signature";
+"signature.warning" = "After you sign, changes or cancellations are not possible.";
+"signature.cancel_button" = "Cancel";
+"signature.confirm_button" = "Confirm";
+"signature.sign_button" = "Sign";
+
+// =============================================================================
+// MARK: - Login
+// =============================================================================
+
+"login.welcome_title" = "Welcome onboard";
+"login.creating_wallet" = "Creating ONEwallet Embedded Wallet";
+"login.sign_in_apple" = "Sign in with  Apple";
+"login.sign_in_google" = "Sign in with  Google";
+"login.terms_prefix" = "By continuing, you agree to NEXUS ";
+"login.terms_of_service" = "Terms of Service";
+"login.terms_middle" = " and consent to its ";
+"login.privacy_policy" = "Privacy Policy.";
+
+// =============================================================================
+// MARK: - PIN (Wallet Password)
+// =============================================================================
+
+"pin.consent_notice_title" = "PIN Setup Notice";
+"pin.consent_notice_description" = "For your security, this PIN cannot be reset or recovered. Please make sure you remember it or store it in a safe place.";
+"pin.consent_item1" = "I understand that losing this PIN will result in permanent loss of access to my wallet and assets.";
+"pin.consent_item2" = "I understand that no one, including the support team, can recover or reset this PIN on my behalf.";
+"pin.consent_button" = "I Understand";
+
+"pin.create_title" = "Create PIN";
+"pin.enter_title" = "Verify Your PIN";
+"pin.create_subtitle" = "This PIN is used to authorize your transactions.";
+"pin.enter_subtitle" = "Enter your PIN to authorize this transaction.";
+"pin.create_hint" = "Set a 6-digit PIN to authorize transactions.";
+"pin.confirm_hint" = "Confirm your 6-digit PIN";
+"pin.enter_hint" = "Enter your 6-digit PIN";
+"pin.mismatch" = "PINs do not match. Please try again.";
+"pin.validation_consecutive" = "Cannot use the same number 3+ times in a row.";
+"pin.validation_sequential" = "Sequential numbers (e.g., 123456) are not allowed.";
+"pin.validation_pattern" = "Repeating patterns (e.g., 121212) are not allowed.";
+"pin.incorrect" = "Incorrect PIN. Please try again.";
+"pin.failure_warning" = "Your account will be locked after further failures.";
+"pin.attempt_count" = "Attempt %1$d of %2$d";
+"pin.locked_warning" = "Too many incorrect attempts. Try again after %@.";
+"pin.locked_notice" = "Please try again after the lock expires.";
+"pin.locked_available" = "%@";
+"pin.locked_available_from" = "(Available from %@)";
+"pin.locked_permanent" = "Your account is permanently locked. Please contact support.";
+"pin.locked_temporary" = "Temporarily locked. Please try again later.";
+
+"password.next_button" = "Next";
+"password.biometric_prompt" = "Authenticate to access your wallet";
+
+// =============================================================================
+// MARK: - Migration
+// =============================================================================
+
+"migration.found_title" = "Existing Wallet Found";
+"migration.found_subtitle" = "An existing ONEwallet was found. Would you like to recover it?";
+"migration.recovery_title" = "What is a Recovery Wallet?";
+"migration.recovery_description" = "It safely restores and integrates all your previous assets. Simply verify your PIN to get started.";
+"migration.recover_button" = "Recover";
+"migration.skip_button" = "Skip";
+"migration.pin_title" = "Enter PIN";
+"migration.pin_loading" = "Recovering wallet...";
+"migration.pin_helper" = "Enter your 4-digit PIN";
+"migration.pin_incorrect" = "Incorrect PIN. Please try again.";
+"migration.pin_remaining_attempts" = "Incorrect PIN. %d attempt(s) remaining.";
+"migration.pin_failure_warning" = "Your account will be locked after further failures.";
+"migration.pin_attempt_count" = "Attempt %1$d of %2$d";
+"migration.pin_locked_warning" = "Please try again after the lock expires.";
+"migration.pin_locked_available" = "(Available from %@)";
+"migration.pin_locked_temporary" = "Too many failed attempts. Please try again after %@.";
+"migration.pin_locked_permanent" = "Account is permanently locked due to too many failed attempts.";
+
+// =============================================================================
+// MARK: - CROSSxError
+// =============================================================================
+
+"error.crossx.invalid_config" = "Invalid configuration: %@";
+"error.crossx.configuration_missing" = "SDK configuration missing [%@]: %@";
+"error.crossx.not_initialized" = "SDK is not initialized";
+"error.crossx.not_authenticated" = "Not authenticated";
+"error.crossx.auth_failed" = "Authentication failed: %@";
+"error.crossx.token_expired" = "Token has expired";
+"error.crossx.session_expired" = "Your session has expired. Please sign in again.";
+"error.crossx.user_rejected" = "User rejected the request";
+"error.crossx.sign_failed" = "Signing failed: %@";
+"error.crossx.transaction_failed" = "Transaction failed: %@";
+"error.crossx.cloud_backup_check_failed" = "Cloud backup check failed: %@";
+"error.crossx.network_error" = "Network error: %@";
+"error.crossx.unknown" = "Unknown error: %@";
+"error.crossx.not_implemented" = "Not implemented";
+"error.crossx.prepare_failed" = "Prepare failed: %@";
+"error.crossx.prepare_expired" = "Prepare UUID has expired. Please try again.";
+"error.crossx.prepare_mismatch" = "Prepare parameter mismatch: %@";
+"error.crossx.migration_backup_exists" = "Existing wallet backup found. Migration is required.";
+"error.crossx.migration_failed" = "Migration failed: %@";
+"error.crossx.migration_required" = "A wallet backup was found and migration is required. Call createWallet(migrateAutomatically: true) to proceed.";
+"error.crossx.unsupported_chain" = "Unsupported chain: %@";
+"error.crossx.invalid_chain_id" = "Invalid chain ID: %@";
+"error.crossx.project_not_registered" = "Unregistered project or app: %@";
+"error.crossx.project_id_missing" = "X-Project-Id header is missing. Set projectId in SDKConfig.";
+"error.crossx.app_identifier_missing" = "X-App-Id header is missing. Check your Bundle Identifier.";
+"error.crossx.invalid_app_type" = "Invalid X-App-Type value: %@";
+"error.crossx.domain_chain_id_mismatch" = "Domain chainId mismatch: %@";
+"error.crossx.password_wrong" = "Incorrect PIN.";
+"error.crossx.password_too_weak" = "PIN must be a 6-digit number.";
+"error.crossx.password_repeated_pattern" = "Repeating digit patterns (e.g., 121212) are not allowed.";
+"error.crossx.user_reject" = "PIN entry was cancelled.";
+"error.crossx.biometric_failed" = "Biometric authentication failed. Please try again or enter your PIN.";
+"error.crossx.password_locked_temporary" = "Too many failed PIN attempts. Please try again after %@.";
+"error.crossx.password_locked_permanent" = "Account is permanently locked due to too many failed PIN attempts.";
+"error.crossx.password_locked_attempts" = "Incorrect PIN. %d attempt(s) remaining.";
+"error.crossx.wallet_inconsistent_state" = "Wallet is in an inconsistent state. Please contact support.";
+"error.crossx.hmac_signature_missing" = "X-HMAC-Signature header is required for this API.";
+"error.crossx.hmac_signature_invalid" = "HMAC signature verification failed.";
+"error.crossx.hmac_key_not_configured" = "HMAC key is not configured. Set hmacKey when initializing CROSSxPrivateSDK.";
+"error.crossx.request_binding_failed" = "Request binding failed: %@";
+"error.crossx.internal_server_error" = "Internal server error: %@";
+"error.crossx.wallet_already_exists" = "A wallet already exists for this account.";
+"error.crossx.wallet_not_found" = "Wallet not found.";
+"error.crossx.signer_communication_failed" = "Signer communication failed: %@";
+"error.crossx.broadcast_failed" = "Transaction broadcast failed: %@";
+"error.crossx.operation_in_progress" = "Another operation is already in progress. Please wait.";
+"error.crossx.address_not_found_in_cache" = "Address not found in cache: %@";
+"error.crossx.withdraw_failed" = "Withdrawal failed: %@";
+"error.crossx.migration_max_index_exceeded" = "maxIndex must be between 0 and 10: %@";
+"error.crossx.invalid_address_name" = "Invalid address name: %@";
+"error.crossx.api_error" = "API error: %@";
+
+// =============================================================================
+// MARK: - OAuthError
+// =============================================================================
+
+"error.oauth.user_cancelled" = "User cancelled sign-in";
+"error.oauth.auth_session_failed" = "Auth session failed: %@";
+"error.oauth.failed_to_start" = "Failed to start auth session";
+"error.oauth.no_callback_url" = "No callback URL received";
+"error.oauth.invalid_callback" = "Invalid callback: %@";
+"error.oauth.no_token" = "No token in response";
+"error.oauth.server_error" = "Server error [%@]: %@";
+"error.oauth.session_deallocated" = "Auth session was deallocated";

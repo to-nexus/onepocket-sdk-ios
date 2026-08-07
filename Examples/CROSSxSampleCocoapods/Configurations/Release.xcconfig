@@ -1,0 +1,6 @@
+// CROSSx SDK CocoaPods Sample - Release Configuration
+// Production 환경 (URL은 SDK 기본값 사용)
+#include "../Pods/Target Support Files/Pods-CROSSxSampleCocoapods/Pods-CROSSxSampleCocoapods.release.xcconfig"
+
+// Project ID
+CROSSX_PROJECT_ID = 6ef9a259932d5e77cb1751e9dfcbe031

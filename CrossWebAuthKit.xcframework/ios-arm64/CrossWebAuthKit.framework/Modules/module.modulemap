@@ -1,0 +1,4 @@
+framework module CrossWebAuthKit {
+    header "CrossWebAuthKit-Swift.h"
+    export *
+}

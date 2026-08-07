@@ -1,0 +1,4 @@
+framework module CROSSxCoreSDK {
+    header "CROSSxCoreSDK-Swift.h"
+    export *
+}

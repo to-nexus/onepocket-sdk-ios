@@ -1,0 +1,21 @@
+platform :ios, '15.0'
+
+target 'CROSSxSampleCocoapods' do
+  use_frameworks!
+
+  pod 'CrossWebAuthKit', :path => '../../'
+  pod 'CROSSxSDK', :path => '../../'
+end
+
+# CROSSxSDK.xcframework 내부의 실제 프레임워크가 CROSSxCoreSDK.framework이므로
+# CocoaPods가 xcframework 이름 기준으로 생성한 참조를 실제 이름으로 보정합니다.
+post_install do |installer|
+  Dir.glob(File.join(installer.sandbox.root, 'Target Support Files', '**', '*')).each do |path|
+    next unless File.file?(path)
+    content = File.read(path)
+    original = content.dup
+    content.gsub!('-framework "CROSSxSDK"', '-framework "CROSSxCoreSDK"')
+    content.gsub!('CROSSxSDK/CROSSxSDK.framework', 'CROSSxSDK/CROSSxCoreSDK.framework')
+    File.write(path, content) if content != original
+  end
+end

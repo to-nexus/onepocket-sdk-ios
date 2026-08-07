@@ -1,0 +1,27 @@
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Xcode
+*.xcodeproj
+*.xcworkspace
+!*.xcworkspace/contents.xcworkspacedata
+!*.xcworkspace/xcshareddata/
+xcuserdata/
+*.xcuserstate
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# CocoaPods (example app)
+Examples/CROSSxSampleCocoapods/Pods/
+Examples/CROSSxSampleCocoapods/*.xcodeproj
+Examples/CROSSxSampleCocoapods/*.xcworkspace
+Examples/CROSSxSampleCocoapods/Podfile.lock
+
+# Generated example artifacts
+Examples/**/Derived/
+Examples/**/.tuist-generated
+
+# macOS
+.DS_Store

@@ -1,0 +1,17 @@
+// CROSSx SDK Sample - Debug Configuration
+// 개발/테스트용 Dev 환경 설정
+
+// OAuth 서비스 URL (Dev)
+CROSSX_OAUTH_SERVICE_URL = https:/$()/stg-cross-wallet-oauth.crosstoken.io
+
+// API Base URL (Dev)
+CROSSX_API_BASE_URL = https:/$()/stg-cross-auth.crosstoken.io
+
+// Wallet Gateway API Base URL (Dev)
+CROSSX_WALLET_API_BASE_URL = https:/$()/stg-embedded-wallet-gateway.crosstoken.io/api/v1
+
+// Wallet V2 API Base URL (Stg)
+CROSSX_WALLET_V2_BASE_URL = https:/$()/stg-wallet-server.crosstoken.io/api/v2
+
+// Project ID
+CROSSX_PROJECT_ID = 6ef9a259932d5e77cb1751e9dfcbe031

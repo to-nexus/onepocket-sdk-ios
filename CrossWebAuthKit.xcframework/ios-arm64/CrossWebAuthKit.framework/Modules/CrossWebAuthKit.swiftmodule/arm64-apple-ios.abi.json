@@ -1,0 +1,1362 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "CrossWebAuthKit",
+    "printedName": "CrossWebAuthKit",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrossWebAuthKit"
+      },
+      {
+        "kind": "Import",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "CrossWebAuthKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CrossWebAuthKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ASWebAuthAdapter",
+        "printedName": "ASWebAuthAdapter",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(window:prefersEphemeralSession:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ASWebAuthAdapter",
+                "printedName": "CrossWebAuthKit.ASWebAuthAdapter",
+                "usr": "c:@M@CrossWebAuthKit@objc(cs)ASWebAuthAdapter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIWindow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIWindow",
+                    "printedName": "UIKit.UIWindow",
+                    "usr": "c:objc(cs)UIWindow"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15CrossWebAuthKit05ASWebC7AdapterC6window23prefersEphemeralSessionACSo8UIWindowCSg_Sbtcfc",
+            "mangledName": "$s15CrossWebAuthKit05ASWebC7AdapterC6window23prefersEphemeralSessionACSo8UIWindowCSg_Sbtcfc",
+            "moduleName": "CrossWebAuthKit",
+            "declAttributes": [
+              "AccessControl",
+              "Nonisolated",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(url:callbackScheme:prefersEphemeralSession:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15CrossWebAuthKit05ASWebC7AdapterC5start3url14callbackScheme23prefersEphemeralSession10Foundation3URLVAJ_SSSbtYaKF",
+            "mangledName": "$s15CrossWebAuthKit05ASWebC7AdapterC5start3url14callbackScheme23prefersEphemeralSession10Foundation3URLVAJ_SSSbtYaKF",
+            "moduleName": "CrossWebAuthKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15CrossWebAuthKit05ASWebC7AdapterC6cancelyyF",
+            "mangledName": "$s15CrossWebAuthKit05ASWebC7AdapterC6cancelyyF",
+            "moduleName": "CrossWebAuthKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleCallbackURL",
+            "printedName": "handleCallbackURL(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15CrossWebAuthKit05ASWebC7AdapterC17handleCallbackURLySb10Foundation0I0VF",
+            "mangledName": "$s15CrossWebAuthKit05ASWebC7AdapterC17handleCallbackURLySb10Foundation0I0VF",
+            "moduleName": "CrossWebAuthKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ASWebAuthAdapter",
+                "printedName": "CrossWebAuthKit.ASWebAuthAdapter",
+                "usr": "c:@M@CrossWebAuthKit@objc(cs)ASWebAuthAdapter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@CrossWebAuthKit@objc(cs)ASWebAuthAdapter(im)init",
+            "mangledName": "$s15CrossWebAuthKit05ASWebC7AdapterCACycfc",
+            "moduleName": "CrossWebAuthKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "presentationAnchor",
+            "printedName": "presentationAnchor(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIWindow",
+                "printedName": "UIKit.UIWindow",
+                "usr": "c:objc(cs)UIWindow"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ASWebAuthenticationSession",
+                "printedName": "AuthenticationServices.ASWebAuthenticationSession",
+                "usr": "c:objc(cs)ASWebAuthenticationSession"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@CrossWebAuthKit@objc(cs)ASWebAuthAdapter(im)presentationAnchorForWebAuthenticationSession:",
+            "mangledName": "$s15CrossWebAuthKit05ASWebC7AdapterC18presentationAnchor3forSo8UIWindowCSo0E21AuthenticationSessionC_tF",
+            "moduleName": "CrossWebAuthKit",
+            "objc_name": "presentationAnchorForWebAuthenticationSession:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@CrossWebAuthKit@objc(cs)ASWebAuthAdapter",
+        "mangledName": "$s15CrossWebAuthKit05ASWebC7AdapterC",
+        "moduleName": "CrossWebAuthKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Custom",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "WebAuthSession",
+            "printedName": "WebAuthSession",
+            "usr": "s:15CrossWebAuthKit0bC7SessionP",
+            "mangledName": "$s15CrossWebAuthKit0bC7SessionP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrossWebAuthKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrossWebAuthKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebAuthConfig",
+        "printedName": "WebAuthConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "prefersEphemeralSession",
+            "printedName": "prefersEphemeralSession",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15CrossWebAuthKit0bC6ConfigV23prefersEphemeralSessionSbvp",
+            "mangledName": "$s15CrossWebAuthKit0bC6ConfigV23prefersEphemeralSessionSbvp",
+            "moduleName": "CrossWebAuthKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CrossWebAuthKit0bC6ConfigV23prefersEphemeralSessionSbvg",
+                "mangledName": "$s15CrossWebAuthKit0bC6ConfigV23prefersEphemeralSessionSbvg",
+                "moduleName": "CrossWebAuthKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "presentationContextTitle",
+            "printedName": "presentationContextTitle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15CrossWebAuthKit0bC6ConfigV24presentationContextTitleSSSgvp",
+            "mangledName": "$s15CrossWebAuthKit0bC6ConfigV24presentationContextTitleSSSgvp",
+            "moduleName": "CrossWebAuthKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CrossWebAuthKit0bC6ConfigV24presentationContextTitleSSSgvg",
+                "mangledName": "$s15CrossWebAuthKit0bC6ConfigV24presentationContextTitleSSSgvg",
+                "moduleName": "CrossWebAuthKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeout",
+            "printedName": "timeout",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15CrossWebAuthKit0bC6ConfigV7timeoutSdvp",
+            "mangledName": "$s15CrossWebAuthKit0bC6ConfigV7timeoutSdvp",
+            "moduleName": "CrossWebAuthKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CrossWebAuthKit0bC6ConfigV7timeoutSdvg",
+                "mangledName": "$s15CrossWebAuthKit0bC6ConfigV7timeoutSdvg",
+                "moduleName": "CrossWebAuthKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(prefersEphemeralSession:presentationContextTitle:timeout:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WebAuthConfig",
+                "printedName": "CrossWebAuthKit.WebAuthConfig",
+                "usr": "s:15CrossWebAuthKit0bC6ConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15CrossWebAuthKit0bC6ConfigV23prefersEphemeralSession24presentationContextTitle7timeoutACSb_SSSgSdtcfc",
+            "mangledName": "$s15CrossWebAuthKit0bC6ConfigV23prefersEphemeralSession24presentationContextTitle7timeoutACSb_SSSgSdtcfc",
+            "moduleName": "CrossWebAuthKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "default",
+            "printedName": "default",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WebAuthConfig",
+                "printedName": "CrossWebAuthKit.WebAuthConfig",
+                "usr": "s:15CrossWebAuthKit0bC6ConfigV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15CrossWebAuthKit0bC6ConfigV7defaultACvpZ",
+            "mangledName": "$s15CrossWebAuthKit0bC6ConfigV7defaultACvpZ",
+            "moduleName": "CrossWebAuthKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebAuthConfig",
+                    "printedName": "CrossWebAuthKit.WebAuthConfig",
+                    "usr": "s:15CrossWebAuthKit0bC6ConfigV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CrossWebAuthKit0bC6ConfigV7defaultACvgZ",
+                "mangledName": "$s15CrossWebAuthKit0bC6ConfigV7defaultACvgZ",
+                "moduleName": "CrossWebAuthKit",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15CrossWebAuthKit0bC6ConfigV",
+        "mangledName": "$s15CrossWebAuthKit0bC6ConfigV",
+        "moduleName": "CrossWebAuthKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrossWebAuthKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebAuthError",
+        "printedName": "WebAuthError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "cancelled",
+            "printedName": "cancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CrossWebAuthKit.WebAuthError.Type) -> CrossWebAuthKit.WebAuthError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebAuthError",
+                    "printedName": "CrossWebAuthKit.WebAuthError",
+                    "usr": "s:15CrossWebAuthKit0bC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CrossWebAuthKit.WebAuthError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebAuthError",
+                        "printedName": "CrossWebAuthKit.WebAuthError",
+                        "usr": "s:15CrossWebAuthKit0bC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15CrossWebAuthKit0bC5ErrorO9cancelledyA2CmF",
+            "mangledName": "$s15CrossWebAuthKit0bC5ErrorO9cancelledyA2CmF",
+            "moduleName": "CrossWebAuthKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "invalidURL",
+            "printedName": "invalidURL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CrossWebAuthKit.WebAuthError.Type) -> (Swift.String) -> CrossWebAuthKit.WebAuthError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> CrossWebAuthKit.WebAuthError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebAuthError",
+                        "printedName": "CrossWebAuthKit.WebAuthError",
+                        "usr": "s:15CrossWebAuthKit0bC5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CrossWebAuthKit.WebAuthError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebAuthError",
+                        "printedName": "CrossWebAuthKit.WebAuthError",
+                        "usr": "s:15CrossWebAuthKit0bC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15CrossWebAuthKit0bC5ErrorO10invalidURLyACSScACmF",
+            "mangledName": "$s15CrossWebAuthKit0bC5ErrorO10invalidURLyACSScACmF",
+            "moduleName": "CrossWebAuthKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "invalidCallbackURL",
+            "printedName": "invalidCallbackURL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CrossWebAuthKit.WebAuthError.Type) -> (Foundation.URL) -> CrossWebAuthKit.WebAuthError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.URL) -> CrossWebAuthKit.WebAuthError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebAuthError",
+                        "printedName": "CrossWebAuthKit.WebAuthError",
+                        "usr": "s:15CrossWebAuthKit0bC5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CrossWebAuthKit.WebAuthError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebAuthError",
+                        "printedName": "CrossWebAuthKit.WebAuthError",
+                        "usr": "s:15CrossWebAuthKit0bC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15CrossWebAuthKit0bC5ErrorO18invalidCallbackURLyAC10Foundation0H0VcACmF",
+            "mangledName": "$s15CrossWebAuthKit0bC5ErrorO18invalidCallbackURLyAC10Foundation0H0VcACmF",
+            "moduleName": "CrossWebAuthKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeout",
+            "printedName": "timeout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CrossWebAuthKit.WebAuthError.Type) -> CrossWebAuthKit.WebAuthError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebAuthError",
+                    "printedName": "CrossWebAuthKit.WebAuthError",
+                    "usr": "s:15CrossWebAuthKit0bC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CrossWebAuthKit.WebAuthError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebAuthError",
+                        "printedName": "CrossWebAuthKit.WebAuthError",
+                        "usr": "s:15CrossWebAuthKit0bC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15CrossWebAuthKit0bC5ErrorO7timeoutyA2CmF",
+            "mangledName": "$s15CrossWebAuthKit0bC5ErrorO7timeoutyA2CmF",
+            "moduleName": "CrossWebAuthKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "presentationFailed",
+            "printedName": "presentationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CrossWebAuthKit.WebAuthError.Type) -> CrossWebAuthKit.WebAuthError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebAuthError",
+                    "printedName": "CrossWebAuthKit.WebAuthError",
+                    "usr": "s:15CrossWebAuthKit0bC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CrossWebAuthKit.WebAuthError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebAuthError",
+                        "printedName": "CrossWebAuthKit.WebAuthError",
+                        "usr": "s:15CrossWebAuthKit0bC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15CrossWebAuthKit0bC5ErrorO18presentationFailedyA2CmF",
+            "mangledName": "$s15CrossWebAuthKit0bC5ErrorO18presentationFailedyA2CmF",
+            "moduleName": "CrossWebAuthKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CrossWebAuthKit.WebAuthError.Type) -> (any Swift.Error) -> CrossWebAuthKit.WebAuthError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> CrossWebAuthKit.WebAuthError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebAuthError",
+                        "printedName": "CrossWebAuthKit.WebAuthError",
+                        "usr": "s:15CrossWebAuthKit0bC5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CrossWebAuthKit.WebAuthError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebAuthError",
+                        "printedName": "CrossWebAuthKit.WebAuthError",
+                        "usr": "s:15CrossWebAuthKit0bC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15CrossWebAuthKit0bC5ErrorO7unknownyACs0E0_pcACmF",
+            "mangledName": "$s15CrossWebAuthKit0bC5ErrorO7unknownyACs0E0_pcACmF",
+            "moduleName": "CrossWebAuthKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15CrossWebAuthKit0bC5ErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s15CrossWebAuthKit0bC5ErrorO16errorDescriptionSSSgvp",
+            "moduleName": "CrossWebAuthKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CrossWebAuthKit0bC5ErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s15CrossWebAuthKit0bC5ErrorO16errorDescriptionSSSgvg",
+                "moduleName": "CrossWebAuthKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorCode",
+            "printedName": "errorCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15CrossWebAuthKit0bC5ErrorO9errorCodeSSvp",
+            "mangledName": "$s15CrossWebAuthKit0bC5ErrorO9errorCodeSSvp",
+            "moduleName": "CrossWebAuthKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CrossWebAuthKit0bC5ErrorO9errorCodeSSvg",
+                "mangledName": "$s15CrossWebAuthKit0bC5ErrorO9errorCodeSSvg",
+                "moduleName": "CrossWebAuthKit",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15CrossWebAuthKit0bC5ErrorO",
+        "mangledName": "$s15CrossWebAuthKit0bC5ErrorO",
+        "moduleName": "CrossWebAuthKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrossWebAuthKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebAuthSession",
+        "printedName": "WebAuthSession",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(url:callbackScheme:prefersEphemeralSession:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15CrossWebAuthKit0bC7SessionP5start3url14callbackScheme016prefersEphemeralE010Foundation3URLVAJ_SSSbtYaKF",
+            "mangledName": "$s15CrossWebAuthKit0bC7SessionP5start3url14callbackScheme016prefersEphemeralE010Foundation3URLVAJ_SSSbtYaKF",
+            "moduleName": "CrossWebAuthKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CrossWebAuthKit.WebAuthSession>",
+            "sugared_genericSig": "<Self where Self : CrossWebAuthKit.WebAuthSession>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15CrossWebAuthKit0bC7SessionP6cancelyyF",
+            "mangledName": "$s15CrossWebAuthKit0bC7SessionP6cancelyyF",
+            "moduleName": "CrossWebAuthKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CrossWebAuthKit.WebAuthSession>",
+            "sugared_genericSig": "<Self where Self : CrossWebAuthKit.WebAuthSession>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(url:callbackScheme:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15CrossWebAuthKit0bC7SessionPAAE5start3url14callbackScheme10Foundation3URLVAI_SStYaKF",
+            "mangledName": "$s15CrossWebAuthKit0bC7SessionPAAE5start3url14callbackScheme10Foundation3URLVAI_SStYaKF",
+            "moduleName": "CrossWebAuthKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CrossWebAuthKit.WebAuthSession>",
+            "sugared_genericSig": "<Self where Self : CrossWebAuthKit.WebAuthSession>",
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15CrossWebAuthKit0bC7SessionP",
+        "mangledName": "$s15CrossWebAuthKit0bC7SessionP",
+        "moduleName": "CrossWebAuthKit",
+        "genericSig": "<τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : Swift.Sendable>",
+        "declAttributes": [
+          "AccessControl",
+          "Custom",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CrossWebAuthKitInfo",
+        "printedName": "CrossWebAuthKitInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15CrossWebAuthKit0abcD4InfoO7versionSSvpZ",
+            "mangledName": "$s15CrossWebAuthKit0abcD4InfoO7versionSSvpZ",
+            "moduleName": "CrossWebAuthKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15CrossWebAuthKit0abcD4InfoO7versionSSvgZ",
+                "mangledName": "$s15CrossWebAuthKit0abcD4InfoO7versionSSvgZ",
+                "moduleName": "CrossWebAuthKit",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15CrossWebAuthKit0abcD4InfoO",
+        "mangledName": "$s15CrossWebAuthKit0abcD4InfoO",
+        "moduleName": "CrossWebAuthKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-webauthkit\/Sources\/CrossWebAuthKit\/Adapters\/ASWebAuthAdapter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 948,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-webauthkit\/Sources\/CrossWebAuthKit\/Core\/WebAuthConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 837,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-webauthkit\/Sources\/CrossWebAuthKit\/Core\/WebAuthConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 924,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-webauthkit\/Sources\/CrossWebAuthKit\/CrossWebAuthKit.swift",
+      "kind": "StringLiteral",
+      "offset": 1035,
+      "length": 7,
+      "value": "\"2.3.2\""
+    }
+  ]
+}

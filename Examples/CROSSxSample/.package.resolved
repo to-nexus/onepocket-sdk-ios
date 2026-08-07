@@ -1,0 +1,15 @@
+{
+  "originHash" : "ff6a5eae4f1782639e3b37aaa7d40db9e121fbe34575f41d301fe5aea5628c98",
+  "pins" : [
+    {
+      "identity" : "onepocket-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/to-nexus/onepocket-sdk-ios.git",
+      "state" : {
+        "revision" : "b442a4c64d17bea49166843a4eafbbe98378c8a4",
+        "version" : "2.2.0-beta.4"
+      }
+    }
+  ],
+  "version" : 3
+}
