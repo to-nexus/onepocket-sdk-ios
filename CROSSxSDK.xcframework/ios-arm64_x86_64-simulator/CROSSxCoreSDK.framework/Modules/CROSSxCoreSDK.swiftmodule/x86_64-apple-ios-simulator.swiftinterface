@@ -13,6 +13,13 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc final public class CROSSxCoreSDKResources : ObjectiveC.NSObject {
+  @objc final public class var bundle: Foundation.Bundle {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
 final public class RemoteCloudBackupAdapter : CROSSxCoreSDK.CloudBackupPort {
   public init(serverAUrl: Swift.String, serverBUrl: Swift.String, network: any CROSSxCoreSDK.NetworkPort, tokenStore: CROSSxCoreSDK.TokenStore)
   final public func checkBackupExists(userId: Swift.String) async throws -> CROSSxCoreSDK.CloudBackupStatus
@@ -322,6 +329,12 @@ public enum L10n {
   public static var errorHmacKeyNotConfigured: Swift.String {
     get
   }
+  public static var errorInvalidEncryptedPin: Swift.String {
+    get
+  }
+  public static var errorPinPolicyViolation: Swift.String {
+    get
+  }
   public static var errorWalletAlreadyExists: Swift.String {
     get
   }
@@ -370,6 +383,17 @@ final public class JWTDecodeAdapter : CROSSxCoreSDK.CryptoPort, @unchecked Swift
   final public func randomBytes(count: Swift.Int) -> Foundation.Data
   final public func sha256(data: Foundation.Data) -> Foundation.Data
   @objc deinit
+}
+public actor PinEncryptionAdapter : CROSSxCoreSDK.PinEncryptorPort {
+  public static let defaultCacheTTL: Swift.Double
+  public init(apiBaseUrl: Swift.String, network: any CROSSxCoreSDK.NetworkPort, cacheTTL: Foundation.TimeInterval = PinEncryptionAdapter.defaultCacheTTL)
+  public func encrypt(_ pin: Swift.String) async throws -> Swift.String
+  public func invalidateCache()
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
 }
 final public class MigrationPresenter : @unchecked Swift.Sendable {
   public enum PromptResult {
@@ -493,7 +517,7 @@ final public class ChainRepositoryAdapter : CROSSxCoreSDK.ChainRepositoryPort {
 }
 final public class WalletRepositoryAdapter : CROSSxCoreSDK.WalletRepositoryPort {
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(apiBaseUrl: Swift.String, walletV2BaseUrl: Swift.String, network: any CROSSxCoreSDK.NetworkPort, tokenStore: CROSSxCoreSDK.TokenStore, hmacKeyHolder: CROSSxCoreSDK.HMACKeyHolder = HMACKeyHolder(), chainRepository: (any CROSSxCoreSDK.ChainRepositoryPort)? = nil)
+  public init(apiBaseUrl: Swift.String, walletV2BaseUrl: Swift.String, network: any CROSSxCoreSDK.NetworkPort, tokenStore: CROSSxCoreSDK.TokenStore, pinEncryptor: any CROSSxCoreSDK.PinEncryptorPort, hmacKeyHolder: CROSSxCoreSDK.HMACKeyHolder = HMACKeyHolder(), chainRepository: (any CROSSxCoreSDK.ChainRepositoryPort)? = nil)
   #endif
   final public func checkWallet() async throws -> CROSSxCoreSDK.WalletCheckStatus
   #if compiler(>=5.3) && $NonescapableTypes
@@ -694,6 +718,10 @@ extension CROSSxCoreSDK.PasswordStorePort {
   public func savePassword(_ password: Swift.String, useBiometric: Swift.Bool) async throws
   public func isBiometricAvailable() -> Swift.Bool
   public func isBiometricEnabled() -> Swift.Bool
+}
+public protocol PinEncryptorPort : Swift.Sendable {
+  func encrypt(_ pin: Swift.String) async throws -> Swift.String
+  func invalidateCache() async
 }
 public protocol StoragePort : Swift.Sendable {
   func save(_ data: Foundation.Data, forKey key: Swift.String) throws
@@ -1025,6 +1053,9 @@ public enum CROSSxError : Foundation.LocalizedError, Swift.Sendable {
   case userReject
   case passwordLocked(CROSSxCoreSDK.PinLockInfo)
   case biometricFailed
+  case invalidEncryptedPin(Swift.String)
+  case pinPolicyViolation(Swift.String)
+  case pinEncryptionFailed(Swift.String)
   case walletInconsistentState
   case unsupportedChain(Swift.String)
   case invalidChainId(Swift.String)
@@ -1135,6 +1166,11 @@ public struct JWTVerifyResult : Swift.Sendable {
   public let valid: Swift.Bool
   public let signatureVerified: Swift.Bool
   public init(payload: CROSSxCoreSDK.JWTPayload, valid: Swift.Bool, signatureVerified: Swift.Bool = false)
+}
+public struct PinPublicKey : Swift.Decodable, Swift.Sendable {
+  public let keyVersion: Swift.String
+  public let publicKey: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum PrepareAction : Swift.String, Swift.Codable, Swift.Sendable {
   case sign
@@ -1754,6 +1790,7 @@ public struct CROSSxSDKContext : Swift.Sendable {
   public let walletApiBaseUrl: Swift.String
   public let hmacKeyHolder: CROSSxCoreSDK.HMACKeyHolder
   public let themeProvider: CROSSxCoreSDK.ThemeProvider
+  public let pinEncryptor: any CROSSxCoreSDK.PinEncryptorPort
 }
 extension CROSSxCoreSDK.CROSSxSDK {
   final public func makePrivateContext() -> CROSSxCoreSDK.CROSSxSDKContext

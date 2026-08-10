@@ -65,7 +65,7 @@
 // =============================================================================
 
 "login.welcome_title" = "Welcome onboard";
-"login.creating_wallet" = "Creating ONEwallet Embedded Wallet";
+"login.creating_wallet" = "Creating ONEpocket Embedded Wallet";
 "login.sign_in_apple" = "Sign in with  Apple";
 "login.sign_in_google" = "Sign in with  Google";
 "login.terms_prefix" = "By continuing, you agree to NEXUS ";
@@ -112,7 +112,7 @@
 // =============================================================================
 
 "migration.found_title" = "Existing Wallet Found";
-"migration.found_subtitle" = "An existing ONEwallet was found. Would you like to recover it?";
+"migration.found_subtitle" = "An existing ONEpocket was found. Would you like to recover it?";
 "migration.recovery_title" = "What is a Recovery Wallet?";
 "migration.recovery_description" = "It safely restores and integrates all your previous assets. Simply verify your PIN to get started.";
 "migration.recover_button" = "Recover";
@@ -172,6 +172,9 @@
 "error.crossx.hmac_signature_missing" = "X-HMAC-Signature header is required for this API.";
 "error.crossx.hmac_signature_invalid" = "HMAC signature verification failed.";
 "error.crossx.hmac_key_not_configured" = "HMAC key is not configured. Set hmacKey when initializing CROSSxPrivateSDK.";
+"error.crossx.invalid_encrypted_pin" = "Could not verify your PIN securely. Please try again.";
+"error.crossx.pin_policy_violation" = "This PIN is not allowed. Avoid sequences (123456), 3 or more repeated digits (111234), and repeating patterns (121212).";
+"error.crossx.pin_encryption_failed" = "Failed to encrypt PIN: %@";
 "error.crossx.request_binding_failed" = "Request binding failed: %@";
 "error.crossx.internal_server_error" = "Internal server error: %@";
 "error.crossx.wallet_already_exists" = "A wallet already exists for this account.";

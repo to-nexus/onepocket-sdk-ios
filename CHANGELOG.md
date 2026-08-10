@@ -1,5 +1,25 @@
 # Changelog
 
+## [Unreleased]
+
+PIN 종단 암호화(E2E) 적용 — PIN을 더 이상 평문으로 전송하지 않습니다.
+
+### Added
+- `PinEncryptorPort` / `PinEncryptionAdapter` — `GET /api/v1/pin-key` 공개키 조회(5분 캐시) 및
+  `"<keyVersion>.<base64url(ciphertext)>"` 봉투 생성
+- `RSAOAEPEncryptor` — RSA-OAEP-SHA256(MGF1-SHA256, 빈 label) 암호화 및 SPKI → PKCS#1 공개키 변환
+- `CROSSxError.invalidEncryptedPin`(-10045), `.pinPolicyViolation`(-10046), `.pinEncryptionFailed`
+
+### Changed
+- `password` / `newPassword` / `recoveryPin`을 포함하는 모든 Gateway 요청이 암호화된 PIN을 전송
+  (HMAC은 암호문이 포함된 최종 body 기준으로 계산)
+- `-10045` 수신 시 공개키 캐시 무효화 후 1회 자동 재시도 (키 로테이션 대응)
+- PIN 모달이 `-10046`을 인라인 정책 안내로 표시 (모달 유지)
+- 공개 SDK API 시그니처는 변경 없음 — 호출자는 평문 PIN을 그대로 전달
+
+### Fixed
+- `L10n.currentLocale` 누락으로 `swift build`가 실패하던 문제
+
 ## [1.2.8] - 2026-03-30
 
 보안 평가 리포트 기반 취약점 수정 및 JWKS 기반 JWT 서명 검증 구현.
