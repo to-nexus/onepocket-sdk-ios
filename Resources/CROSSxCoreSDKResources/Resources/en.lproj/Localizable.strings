@@ -111,12 +111,12 @@
 // MARK: - Migration
 // =============================================================================
 
-"migration.found_title" = "Existing Wallet Found";
-"migration.found_subtitle" = "An existing ONEpocket was found. Would you like to recover it?";
+"migration.found_title" = "Wallet Found on Social Account";
+"migration.found_subtitle" = "We found a wallet linked to your social account. Enter your 4-digit PIN to restore your assets.";
 "migration.recovery_title" = "What is a Recovery Wallet?";
 "migration.recovery_description" = "It safely restores and integrates all your previous assets. Simply verify your PIN to get started.";
-"migration.recover_button" = "Recover";
-"migration.skip_button" = "Skip";
+"migration.recover_button" = "Import from Social Backup";
+"migration.skip_button" = "Skip for Now";
 "migration.pin_title" = "Enter PIN";
 "migration.pin_loading" = "Recovering wallet...";
 "migration.pin_helper" = "Enter your 4-digit PIN";
