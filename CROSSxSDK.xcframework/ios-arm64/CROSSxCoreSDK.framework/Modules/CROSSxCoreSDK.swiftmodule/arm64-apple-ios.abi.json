@@ -51871,251 +51871,251 @@
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
       "offset": 443,
-      "length": 14,
-      "value": "\"2.4.0-beta.4\""
+      "length": 7,
+      "value": "\"2.4.0\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3004,
+      "offset": 2997,
       "length": 41,
       "value": "\"https:\/\/one-wallet-oauth.onechain.nexus\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3127,
+      "offset": 3120,
       "length": 34,
       "value": "\"https:\/\/cross-auth.crosstoken.io\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3250,
+      "offset": 3243,
       "length": 54,
       "value": "\"https:\/\/embedded-wallet-gateway.crosstoken.io\/api\/v1\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3395,
+      "offset": 3388,
       "length": 44,
       "value": "\"https:\/\/wallet-server.crosstoken.io\/api\/v2\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3547,
+      "offset": 3540,
       "length": 48,
       "value": "\"https:\/\/stg-wallet-server.crosstoken.io\/api\/v2\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3686,
+      "offset": 3679,
       "length": 43,
       "value": "\"https:\/\/cross-storage-a.crosstoken.io\/api\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3820,
+      "offset": 3813,
       "length": 43,
       "value": "\"https:\/\/cross-storage-b.crosstoken.io\/api\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3946,
+      "offset": 3939,
       "length": 32,
       "value": "\"https:\/\/portrait.crosstoken.io\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "Array",
-      "offset": 14317,
+      "offset": 14310,
       "length": 12,
       "value": "[1007, 1008]"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "Array",
-      "offset": 14452,
+      "offset": 14445,
       "length": 16,
       "value": "[100, 101, 1001]"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 17924,
+      "offset": 17917,
       "length": 44,
       "value": "\"https:\/\/wallet-server.crosstoken.io\/api\/v2\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 28697,
+      "offset": 28690,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 35771,
+      "offset": 35764,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 37743,
+      "offset": 37736,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 46464,
+      "offset": 46457,
       "length": 12,
       "value": "\"0x3B9ACA00\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 46549,
+      "offset": 46542,
       "length": 12,
       "value": "\"0x77359400\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 60362,
+      "offset": 60355,
       "length": 6,
       "value": "30000"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 60400,
+      "offset": 60393,
       "length": 5,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 61645,
+      "offset": 61638,
       "length": 9,
       "value": "\"Account\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 63269,
+      "offset": 63262,
       "length": 9,
       "value": "\"Account\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 64545,
+      "offset": 64538,
       "length": 9,
       "value": "\"Account\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 66213,
+      "offset": 66206,
       "length": 9,
       "value": "\"Account\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 67160,
+      "offset": 67153,
       "length": 9,
       "value": "\"Account\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 70044,
+      "offset": 70037,
       "length": 8,
       "value": "\"latest\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 71160,
+      "offset": 71153,
       "length": 8,
       "value": "\"latest\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 72520,
+      "offset": 72513,
       "length": 9,
       "value": "\"pending\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 75788,
+      "offset": 75781,
       "length": 22,
       "value": "\"eth_getBlockByNumber\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 75841,
+      "offset": 75834,
       "length": 8,
       "value": "\"latest\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 75858,
+      "offset": 75851,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 76034,
+      "offset": 76027,
       "length": 59,
       "value": "\"getBaseFeePerGas failed: [\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 76074,
+      "offset": 76067,
       "length": 1,
       "value": "\"] \""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 76092,
+      "offset": 76085,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "StringLiteral",
-      "offset": 76205,
+      "offset": 76198,
       "length": 37,
       "value": "\"getBaseFeePerGas returned no result\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 80427,
+      "offset": 80420,
       "length": 6,
       "value": "30000"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/CROSSxSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 80465,
+      "offset": 80458,
       "length": 5,
       "value": "1000"
     }
