@@ -1,4 +1,4 @@
-# CROSSx iOS SDK
+# ONEpocket iOS SDK
 
 [![Swift](https://img.shields.io/badge/Swift-5.9+-orange.svg)](https://swift.org)
 [![Platform](https://img.shields.io/badge/Platform-iOS%2015.0+-lightgrey.svg)](https://developer.apple.com/ios/)
@@ -6,7 +6,7 @@
 
 > English documentation: [README.md](README.md)
 
-CROSSx iOS SDK는 OAuth 기반 인증과 Embedded Wallet 기능을 제공하는 Swift SDK입니다.
+ONEpocket iOS SDK는 OAuth 기반 인증과 Embedded Wallet 기능을 제공하는 Swift SDK입니다.
 
 ## 특징
 
@@ -20,6 +20,7 @@ CROSSx iOS SDK는 OAuth 기반 인증과 Embedded Wallet 기능을 제공하는 
 - **생체 인증** — Face ID / Touch ID 기반 지갑 잠금 해제
 - **테마 커스터마이징** — 라이트/다크 모드 및 색상 토큰 오버라이드
 - **다국어(i18n) 지원** — 영어(기본), 한국어 — `.lproj` 추가만으로 새 언어 확장 가능
+- **Clean Architecture** — 테스트 가능하고 유지보수하기 쉬운 구조
 - **Swift Concurrency** — async/await 완전 지원
 - **외부 의존성 없음** — 순수 Swift/Foundation 구현
 
@@ -32,8 +33,8 @@ CROSSx iOS SDK는 OAuth 기반 인증과 Embedded Wallet 기능을 제공하는 
 ## 지원 네트워크
 
 ### Cross 네트워크
-- **Cross Mainnet** (eip155:612055) — 프로덕션 환경
-- **Cross Testnet** (eip155:612044) — 개발/테스트 환경 (기본값)
+- **ONEchain Mainnet** (eip155:612055) — 프로덕션 환경
+- **ONEchain Testnet** (eip155:612044) — 개발/테스트 환경 (기본값)
 
 ### 기타 EVM 체인
 - Ethereum Mainnet, Sepolia
@@ -48,7 +49,7 @@ CROSSx iOS SDK는 OAuth 기반 인증과 Embedded Wallet 기능을 제공하는 
 
 1. Xcode에서 프로젝트 열기
 2. **File → Add Packages…** 선택
-3. 다음 URL 입력:
+3. 배포 레포 URL 입력:
    ```
    https://github.com/to-nexus/onepocket-sdk-ios
    ```
@@ -61,38 +62,6 @@ dependencies: [
     .package(url: "https://github.com/to-nexus/onepocket-sdk-ios", from: "2.0.0")
 ]
 ```
-
-타겟 의존성에도 추가:
-
-```swift
-.target(
-    name: "YourApp",
-    dependencies: [
-        .product(name: "CROSSxSDK", package: "onepocket-sdk-ios")
-    ]
-)
-```
-
-### CocoaPods
-
-`Podfile`에 다음을 추가:
-
-```ruby
-platform :ios, '15.0'
-
-target 'YourApp' do
-  use_frameworks!
-  pod 'CROSSxSDK'
-end
-```
-
-그 후 실행:
-
-```bash
-pod install
-```
-
-> **주의**: 설치 후에는 반드시 `.xcworkspace` 파일을 열어야 합니다 (`.xcodeproj` 대신).
 
 ## 빠른 시작
 
@@ -213,7 +182,9 @@ do {
 try await sdk.signOut()
 ```
 
-## 생체 인증
+## 추가 API
+
+### 생체 인증
 
 ```swift
 let available = sdk.canUseBiometric()
@@ -221,7 +192,13 @@ let enabled = sdk.isBiometricEnabled()
 try await sdk.setBiometricEnabled(true)
 ```
 
-## 테마 커스터마이징
+### 토큰 갱신
+
+```swift
+let newAccessToken = try await sdk.refreshToken()
+```
+
+### 테마 커스터마이징
 
 ```swift
 let sdk = try CROSSxSDK(config: SDKConfig(
@@ -237,6 +214,20 @@ let sdk = try CROSSxSDK(config: SDKConfig(
 // 런타임에 테마 변경 (다음 모달부터 적용)
 sdk.applyTheme(.dark)
 ```
+
+## OAuth 플로우
+
+```
+iOS SDK → ASWebAuthenticationSession 열기
+  URL: {oauthServiceUrl}/google?redirectScheme={callbackScheme}
+
+OAuth 서버 → Deep Link로 콜백
+  {callbackScheme}://{oauthHost}/?status=success&data={base64}
+
+SDK → base64 디코딩 → 토큰 추출 → JWT 검증 → 완료
+```
+
+> Web에서는 `window.open()` + `postMessage` 방식을 사용합니다.
 
 ## 다국어(i18n) 지원
 
@@ -259,17 +250,8 @@ let sdk = try CROSSxSDK(config: SDKConfig(
 
 `locale`을 생략하거나 `nil`로 두면 Apple 표준 localization fallback 규칙을 따릅니다.
 
-새 언어 추가는 SDK의 `Resources/` 디렉터리에 `.lproj` 폴더만 추가하면 됩니다 — 코드 변경 불필요.
-
-## 토큰 갱신
-
-```swift
-let newAccessToken = try await sdk.refreshToken()
-```
-
 ## 예제 앱
 
-**Swift Package Manager / Tuist:**
 ```bash
 cd Examples/CROSSxSample
 tuist install
@@ -277,14 +259,20 @@ tuist generate
 open CROSSxSample.xcworkspace
 ```
 
-**CocoaPods:**
-```bash
-cd Examples/CROSSxSampleCocoapods
-ruby setup.rb
-pod install
-open CROSSxSampleCocoapods.xcworkspace
-```
+자세한 내용은 [Examples/CROSSxSample/README.md](Examples/CROSSxSample/README.md)를 참고하세요.
+
+## 릴리즈
+
+- 변경 이력: [CHANGELOG.md](CHANGELOG.md)
+- 전체 릴리즈: [GitHub Releases](https://github.com/to-nexus/onepocket-sdk-ios/releases)
+
+베타 버전은 GitHub prerelease 로 배포되며 latest release 로 지정되지 않습니다. Swift Package Manager 와 CocoaPods 모두 정확한 버전을 지정해 설치하세요.
 
 ## 라이선스
 
 MIT License. 자세한 내용은 [LICENSE](LICENSE) 파일을 참고하세요.
+
+---
+
+**버전**: 2.4.0
+**최종 수정일**: 2026-09-04

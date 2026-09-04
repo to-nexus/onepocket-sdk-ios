@@ -1,4 +1,4 @@
-# CROSSx iOS SDK
+# ONEpocket iOS SDK
 
 [![Swift](https://img.shields.io/badge/Swift-5.9+-orange.svg)](https://swift.org)
 [![Platform](https://img.shields.io/badge/Platform-iOS%2015.0+-lightgrey.svg)](https://developer.apple.com/ios/)
@@ -6,7 +6,7 @@
 
 > 한국어 문서: [README.ko.md](README.ko.md)
 
-CROSSx iOS SDK is a Swift SDK that provides OAuth-based authentication and Embedded Wallet functionality.
+ONEpocket iOS SDK is a Swift SDK that provides OAuth-based authentication and Embedded Wallet functionality.
 
 ## Features
 
@@ -250,36 +250,6 @@ let sdk = try CROSSxSDK(config: SDKConfig(
 
 If `locale` is omitted or `nil`, the SDK follows Apple's standard localization fallback rules.
 
-To add a new language, place a `.lproj` folder in `Sources/CROSSxCoreSDK/Resources/` — no code changes required:
-
-```
-Sources/CROSSxCoreSDK/Resources/
-  ├── en.lproj/Localizable.strings
-  ├── ko.lproj/Localizable.strings
-  └── ja.lproj/Localizable.strings   ← add new language here
-```
-
-## Architecture
-
-CROSSx SDK uses **Clean Architecture + Hexagonal Architecture (Ports & Adapters)**.
-
-```
-Sources/CROSSxCoreSDK/
- ├─ Core/          # Pure business logic
- │   ├─ UseCases/  # Use Cases
- │   ├─ Ports/     # Protocols (Ports)
- │   └─ Types/     # Domain types
- │
- ├─ Adapters/      # Platform implementations
- │   ├─ Crypto/
- │   ├─ Storage/
- │   ├─ OAuth/
- │   └─ ...
- │
- └─ SDK/           # Public API
-     └─ CROSSxSDK.swift
-```
-
 ## Example App
 
 ```bash
@@ -291,75 +261,12 @@ open CROSSxSample.xcworkspace
 
 See [Examples/CROSSxSample/README.md](Examples/CROSSxSample/README.md) for details.
 
-## Documentation
+## Releases
 
-- [Architecture Guide](doc/01-architecture.md)
-- [Authentication](doc/02-authentication.md)
-- [Token Management](doc/03-token-management.md)
-- [Chain & Network](doc/04-chain-network.md)
-- [Wallet & Transaction](doc/05-wallet-transaction.md)
-- [Gas & Fee](doc/06-gas-fee.md)
-- [API Reference](doc/07-api-reference.md)
-- [Cross-Platform](doc/08-cross-platform.md)
-- [Environment Config](doc/09-environment-config.md)
-- [CrossWebAuthKit Relationship](doc/10-crosswebauth-relationship.md)
-- [Password & Private SDK](doc/11-password-private-sdk.md)
-- [Localization (i18n)](doc/12-localization-i18n.md)
+- Version history: [CHANGELOG.md](CHANGELOG.md)
+- All releases: [GitHub Releases](https://github.com/to-nexus/onepocket-sdk-ios/releases)
 
-## Release
-
-### Repository Structure
-
-| Repository | Role |
-|---|---|
-| `crossy-sdk-ios-develop` | Source development, tests, CI/CD (this repo) |
-| `crossx-sdk-ios` | xcframework binary distribution (SPM / CocoaPods) |
-| `onepocket-sdk-ios` | Same binaries, mirrored for the ONEpocket brand |
-
-### Release Process
-
-#### 1. Update CHANGELOG.md
-
-Move the `[Unreleased]` section content to a versioned release entry.
-
-#### 2. Update version constant and commit
-
-```bash
-# Sources/CROSSxCoreSDK/SDK/CROSSxSDK.swift
-public static let version = "x.y.z"
-```
-
-```bash
-git add -A && git commit -m "chore: version x.y.z"
-```
-
-#### 3. Create and push a release tag
-
-```bash
-./scripts/tag-release.sh patch    # x.y.0 → x.y.1
-./scripts/tag-release.sh minor    # x.0.z → x.1.0
-./scripts/tag-release.sh x.y.z   # explicit version
-./scripts/tag-release.sh beta     # auto-increment beta (e.g. 2.0.3-beta.2)
-./scripts/tag-release.sh 2.0.4 beta  # auto-increment beta for a specific base version
-./scripts/tag-release.sh 2.0.3-beta.1  # explicit beta
-```
-
-After the tag is pushed, GitHub Actions automatically:
-1. Runs all tests (`CROSSxCoreSDK` + `CrossWebAuthKit`)
-2. Builds xcframeworks (`CROSSxSDK.xcframework`, `CrossWebAuthKit.xcframework`)
-3. Copies xcframeworks to every distribution repo (`crossx-sdk-ios`, `onepocket-sdk-ios`) and updates version
-4. Creates GitHub Releases in the source repo and in every distribution repo
-
-Beta tags are created as GitHub prereleases and are not marked as the latest release. When installing a beta, specify the exact version in both Swift Package Manager and CocoaPods.
-
-> See [DEPLOYMENT.md](DEPLOYMENT.md) for full details.
-
-### Scripts
-
-| Script | Description |
-|---|---|
-| `./scripts/tag-release.sh [patch\|minor\|major\|beta\|x.y.z\|x.y.z beta]` | Create and push a release/beta tag |
-| `./scripts/update-version.sh <version> <deploy_repo>` | Batch version update + xcframework copy (CI use) |
+Beta versions are published as GitHub prereleases and are not marked as the latest release. Pin them exactly in both Swift Package Manager and CocoaPods.
 
 ## License
 
@@ -367,5 +274,5 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-**Version**: 2.0.3
-**Last updated**: 2026-05-12
+**Version**: 2.4.0
+**Last updated**: 2026-09-04
