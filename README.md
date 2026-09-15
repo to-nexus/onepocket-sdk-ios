@@ -70,7 +70,7 @@ dependencies: [
 ```swift
 import CROSSxCoreSDK
 
-let sdk = try CROSSxSDK(config: SDKConfig(
+let sdk = try ONEpocketSDK(config: SDKConfig(
     projectId: "your-project-id",
     appName: "Your App Name"
 ))
@@ -82,7 +82,7 @@ try await sdk.initialize()
 #### Info.plist / xcconfig-Based Initialization
 
 ```swift
-let sdk = try CROSSxSDK(config: try SDKConfig.fromInfoPlist(
+let sdk = try ONEpocketSDK(config: try SDKConfig.fromInfoPlist(
     projectId: "your-project-id",
     appName: "Your App Name"
 ))
@@ -169,7 +169,7 @@ let chainId = ChainId.ethereumMainnet // "eip155:1"
 do {
     let result = try await sdk.sendTransactionAndWait(tx, chainId: ChainId.crossTestnet)
     print("txHash: \(result.txHash)")
-} catch let error as CROSSxError {
+} catch let error as ONEpocketError {
     if case .userRejected = error {
         print("User cancelled the transaction")
     }
@@ -201,7 +201,7 @@ let newAccessToken = try await sdk.refreshToken()
 ### Theme Customization
 
 ```swift
-let sdk = try CROSSxSDK(config: SDKConfig(
+let sdk = try ONEpocketSDK(config: SDKConfig(
     projectId: "your-project-id",
     appName: "Your App Name",
     theme: .system,
@@ -241,7 +241,7 @@ The SDK uses Apple-standard `.strings` resources via `Bundle.module`.
 To force the SDK UI language regardless of the app/system language, pass `locale` to `SDKConfig`:
 
 ```swift
-let sdk = try CROSSxSDK(config: SDKConfig(
+let sdk = try ONEpocketSDK(config: SDKConfig(
     projectId: "your-project-id",
     appName: "Your App Name",
     locale: .ko // or .en
@@ -274,5 +274,5 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-**Version**: 2.4.0
-**Last updated**: 2026-09-04
+**Version**: 2.5.0
+**Last updated**: 2026-09-15

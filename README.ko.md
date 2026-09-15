@@ -70,7 +70,7 @@ dependencies: [
 ```swift
 import CROSSxCoreSDK
 
-let sdk = try CROSSxSDK(config: SDKConfig(
+let sdk = try ONEpocketSDK(config: SDKConfig(
     projectId: "your-project-id",
     appName: "Your App Name"
 ))
@@ -82,7 +82,7 @@ try await sdk.initialize()
 #### Info.plist / xcconfig 기반 초기화
 
 ```swift
-let sdk = try CROSSxSDK(config: try SDKConfig.fromInfoPlist(
+let sdk = try ONEpocketSDK(config: try SDKConfig.fromInfoPlist(
     projectId: "your-project-id",
     appName: "Your App Name"
 ))
@@ -169,7 +169,7 @@ let chainId = ChainId.ethereumMainnet // "eip155:1"
 do {
     let result = try await sdk.sendTransactionAndWait(tx, chainId: ChainId.crossTestnet)
     print("txHash: \(result.txHash)")
-} catch let error as CROSSxError {
+} catch let error as ONEpocketError {
     if case .userRejected = error {
         print("사용자가 취소했습니다")
     }
@@ -201,7 +201,7 @@ let newAccessToken = try await sdk.refreshToken()
 ### 테마 커스터마이징
 
 ```swift
-let sdk = try CROSSxSDK(config: SDKConfig(
+let sdk = try ONEpocketSDK(config: SDKConfig(
     projectId: "your-project-id",
     appName: "Your App Name",
     theme: .system,
@@ -241,7 +241,7 @@ SDK는 `Bundle.module` 기반의 Apple 표준 `.strings` 리소스를 사용합�
 앱/시스템 언어와 관계없이 SDK UI 언어를 고정하려면 `SDKConfig`에 `locale`을 지정하세요.
 
 ```swift
-let sdk = try CROSSxSDK(config: SDKConfig(
+let sdk = try ONEpocketSDK(config: SDKConfig(
     projectId: "your-project-id",
     appName: "Your App Name",
     locale: .ko // 또는 .en
@@ -274,5 +274,5 @@ MIT License. 자세한 내용은 [LICENSE](LICENSE) 파일을 참고하세요.
 
 ---
 
-**버전**: 2.4.0
-**최종 수정일**: 2026-09-04
+**버전**: 2.5.0
+**최종 수정일**: 2026-09-15

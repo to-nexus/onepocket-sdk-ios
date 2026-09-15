@@ -1,8 +1,40 @@
 # Changelog
 
-## [Unreleased]
+## [2.5.0] - 2026-09-15
 
-PIN 종단 암호화(E2E) 적용 — PIN을 더 이상 평문으로 전송하지 않습니다.
+ONEpocket 리브랜딩을 위한 신규 Swift API를 추가하고 기존 CROSSx API를 deprecated 호환 alias로 유지합니다.
+
+### Added
+- `ONEpocketSDK`, `ONEpocketSDKContext`, `ONEpocketOAuthAdapter`
+- `ONEpocketPrivateSDK`
+- `ONEpocketError`
+
+### Deprecated
+- `CROSSxSDK`, `CROSSxSDKContext`, `CROSSxOAuthAdapter`
+- `CROSSxPrivateSDK`
+- `CROSSxError`
+
+기존 API 시그니처와 에러 case는 변경되지 않으며 신규 코드에서는 ONEpocket 타입을 사용합니다.
+모듈명(`import CROSSxCoreSDK`)·URL scheme(`crossx-*`)·Keychain 저장 키와 서비스 이름은
+사용자 기기와 OAuth 화이트리스트에 이미 등록돼 있어 의도적으로 유지합니다.
+
+### Fixed
+- 4xx/5xx 응답 바디를 `NetworkError`에 보존 — 게이트웨이는 헤더 누락·화이트리스트 문제를
+  HTTP 200 + 음수 code로 반환하므로 단말에서 보이는 실제 4xx는 CloudFront geo restriction·WAF
+  처럼 엣지에서 잘린 경우다. 기존에는 상태 코드만 남기고 바디를 버려 원인을 알 수 없었다.
+  `responseBody`로 원문 노출(HTML은 태그 제거 후 200자 제한), 기본값 `nil`이라
+  기존 호출부·패턴 매칭 영향 없음
+- `BrandCompatibilityTests`가 버전 리터럴을 직접 비교해 릴리즈 bump마다 실패하던 문제
+
+### Changed
+- `update-version.sh` / `tag-release.sh`가 개명된 `ONEpocketSDK.swift`를 탐색하도록 수정
+  (구 경로 폴백 유지, 후보가 없으면 조용히 넘어가지 않고 실패)
+
+## [2.4.0] - 2026-08-18
+
+PIN 종단 암호화(E2E) 적용 및 ONEwallet → ONEpocket 브랜드 정리.
+
+PIN을 더 이상 평문으로 전송하지 않습니다.
 
 ### Added
 - `PinEncryptorPort` / `PinEncryptionAdapter` — `GET /api/v1/pin-key` 공개키 조회(5분 캐시) 및
@@ -16,9 +48,211 @@ PIN 종단 암호화(E2E) 적용 — PIN을 더 이상 평문으로 전송하지
 - `-10045` 수신 시 공개키 캐시 무효화 후 1회 자동 재시도 (키 로테이션 대응)
 - PIN 모달이 `-10046`을 인라인 정책 안내로 표시 (모달 유지)
 - 공개 SDK API 시그니처는 변경 없음 — 호출자는 평문 PIN을 그대로 전달
+- 브랜드명·아이콘 에셋 ONEwallet → ONEpocket (SDK 로컬라이즈 문구·샘플 앱·프리뷰 픽스처)
+- OAuth 도메인을 ONEwallet 기준으로 변경, 샘플 Dev 환경 전환 (CRS-11257)
+- Import from Social Backup 문구 변경 (CRS-12120)
+- 로그인 약관·개인정보처리방침 URL을 앱 기준으로 변경 (CRS-12207)
+- 마이그레이션 화면 아이콘을 ONE Wallet 지갑 아이콘으로 통일
+- onepocket-sdk-ios 배포 레포로 릴리즈 미러링 (CI)
 
 ### Fixed
 - `L10n.currentLocale` 누락으로 `swift build`가 실패하던 문제
+- 다크모드에서 애플 로고가 검정으로 표시되던 문제
+
+## [2.3.2] - 2026-07-15
+
+CROSSx → ONEwallet 리브랜딩.
+
+### Changed
+- SDK 네이밍·표기를 ONEwallet 기준으로 변경 (CRS-10597)
+- Chain명 변경 (CRS-11257)
+- Approve 버튼명 변경 (CRS-10448)
+
+### Fixed
+- 빌드 실패 수정
+
+## [2.2.0] - 2026-05-18
+
+### Added
+- Tx History 인터페이스 (CRS-9071) — 신규 API Spec 적용 및 tx 적재 API 변경
+- OAuth 요청에 언어 query 추가 (CRS-9462)
+- locale sync 및 docs sync rule (CRS-9460, CRS-9439)
+
+### Changed
+- `CROSSxCoreSDK`를 dynamic framework로 빌드
+- `tag-release.sh`에 소비자 빌드 검증 단계 추가, 검증 후 `build/` xcframework 보존
+- CROSSxSampleXCFramework Tuist 프로젝트 추가
+
+### Fixed
+- 리소스 번들 위치를 잘못 찾던 문제
+- `defaultLocalization` 누락으로 번역이 적용되지 않던 문제
+- 샘플 앱 이름이 SDK config에 전달되지 않던 문제
+- wallet v2 endpoint를 staging과 정렬
+
+## [2.0.4] - 2026-05-12
+
+### Added
+- 로케일을 SDK 외부에서 설정 가능하도록 변경
+
+### Fixed
+- 바이너리 릴리즈에 `CROSSxCoreSDK` 리소스가 누락되던 문제
+- 바이너리 패키지 `defaultLocalization` 미지정
+- 지갑 선택기 동기화 문구
+
+### Changed
+- 릴리즈 자동화 스크립트 정비 및 SDK 로케일 설정 문서화
+
+## [2.0.3] - 2026-04-27
+
+### Fixed
+- 토큰 만료 → 만료 팝업 → 재로그인 시 다른 계정으로 로그인되던 문제 (CRS-9039)
+
+## [2.0.2] - 2026-04-23
+
+### Fixed
+- 과도한 방어 로직(ACL self-heal)으로 인한 사이드 이펙트 제거 (CRS-8788)
+
+## [2.0.1] - 2026-04-22
+
+### Removed
+- `setBiometricReuseDuration`
+
+### Fixed
+- 세션 만료 시 생체 인증이 3회 발생하던 문제 (CRS-8788)
+- `signInWithJWT` PIN 캐시 클리어 변경을 되돌림 (1.4.2에서 도입)
+
+## [2.0.0] - 2026-04-21
+
+### Added
+- internal SDK에서 Confirm 창을 skip하는 인터페이스 (CRS-8788)
+
+## [1.4.2] - 2026-04-20
+
+### Changed
+- `JWTSignInUseCase`를 Firebase IdToken 기반 로그인으로 전환
+
+### Fixed
+- `signInWithJWT` 시 이전 세션 PIN 캐시 클리어
+
+## [1.4.1] - 2026-04-16
+
+### Added
+- 지갑 portrait
+
+## [1.4.0] - 2026-04-10
+
+### Added
+- `setAddressNames` 인터페이스
+
+### Changed
+- refresh API path를 `refresh` → `refresh/simple`로 변경
+
+## [1.3.13] - 2026-04-17
+
+1.4.x 와는 별개 계보의 유지보수 릴리즈입니다. (1.3.14는 버전 상수 bump만 포함)
+
+### Changed
+- `JWTSignInUseCase`를 Firebase IdToken 기반 로그인으로 전환
+
+### Fixed
+- `signInWithJWT` 시 이전 세션 PIN 캐시 클리어
+
+## [1.3.12] - 2026-04-08
+
+### Added
+- 요청/응답 로깅
+
+### Fixed
+- API 에러 메시지가 누락되던 문제
+
+## [1.3.11] - 2026-04-08
+
+### Changed
+- PIN 잠금 해제 시각에 초 단위 표시
+
+## [1.3.10] - 2026-04-07
+
+### Fixed
+- 6자리 PIN 입력 실패 시 시도 횟수·잠금 정보가 표시되지 않던 문제
+- `biometricFailed` 시 PIN 모달로 graceful fallback
+- Withdraw 시 SessionExpired 오류
+
+## [1.3.9] - 2026-04-07
+
+### Fixed
+- `savePassword` 기본 호출 시 기존 생체 설정이 덮어써지던 문제
+
+## [1.3.8] - 2026-04-07
+
+### Fixed
+- dismiss 시 `UIHostingController`를 먼저 분리해 RN Yoga ↔ AutoLayout 무한 루프 방지
+
+## [1.3.7] - 2026-04-07
+
+### Changed
+- 토큰·인증 실패를 `sessionExpired`로 통일하고 생체 설정 정리
+
+### Fixed
+- PIN 로딩 인디케이터 및 모달 레이아웃 높이 안정화
+- `ModalController` dismiss 타이밍 및 PIN 시트 즉시 닫기
+
+## [1.3.6] - 2026-04-06
+
+### Added
+- SignInAgain UseCase 및 API (CRS-8405)
+
+## [1.3.5] - 2026-04-06
+
+### Added
+- 커스텀 숫자 키패드
+
+### Changed
+- PIN 잠금 표시 개선 및 모달 dismiss 타이밍 변경
+
+### Fixed
+- refresh token 만료 시 `sessionExpired` 반환 (CRS-8405)
+
+## [1.3.4] - 2026-04-06
+
+### Fixed
+- iOS 18+ PIN 모달 dismiss 시 CPU 100% 점유 및 `userReject` 미전달
+
+## [1.3.3] - 2026-04-06
+
+### Fixed
+- Google / Apple 로그인 반복 시 pending 되던 현상 (CRS-8392)
+
+## [1.3.2] - 2026-04-03
+
+### Changed
+- `passwordCancelled` → `userReject`로 이름 변경
+
+### Fixed
+- PIN 잠금 시간 표시에 초 단위 추가 (HH:mm → HH:mm:ss) (CRS-8375)
+- Apple 딥링크 콜백에서 Firebase ID Token을 올바르게 식별
+
+## [1.3.1] - 2026-04-03
+
+### Added
+- 마이그레이션 시 다중 주소 생성을 위한 `maxIndex` 파라미터
+
+### Removed
+- `migrationSkipped` — 마이그레이션 skip은 `userRejected`를 사용
+
+## [1.3.0] - 2026-04-01
+
+### Added
+- JWKS `kid` 불일치 시 키 로테이션 fallback
+
+### Changed
+- `CROSSxError` 모델을 Android SDK 에러 스펙과 정렬
+- `SdkErrorMapper`로 백엔드 에러 매핑 일원화
+
+## [1.2.9] - 2026-04-01
+
+### Added
+- `changePassword`, `exportMnemonic`, `exportPrivateKey` API
+- 에러 코드 `-10032`, `PinLockInfo` / `VerifyPasswordResponse` 갱신
 
 ## [1.2.8] - 2026-03-30
 
@@ -120,3 +354,70 @@ Android SDK API 통일을 위한 리네이밍 및 신규 API 추가.
 ## [1.2.1] - 2026-03-24
 
 - feat: add sessionExpired error for token/refresh expiry
+
+## [1.2.0] - 2026-03-24
+
+### Added
+- `signInWithJWT()` — JWT 직접 로그인 및 만료된 access token 자동 갱신
+- `savePin` / `setBiometricEnabled`, `biometricFailed` 에러 처리
+- nonce claim 및 `sha256` 지원 (Core ports·types, adapters)
+
+### Changed
+- PIN UI·서명 트랜잭션 팝업 재설계 및 PIN 검증 강화
+- `verifyPin` → `verifyRecoveryPin`으로 이름 변경
+
+### Fixed
+- 모달 연속 표시 시 race condition
+- `withPasswordRetry`에서 operation 에러가 PIN 모달로 잘못 fallback 되던 문제
+- non-iOS 빌드 및 XCFramework 빌드 오류
+
+## [1.1.1] - 2026-03-23
+
+### Added
+- `checkWallet()` 공개 API
+
+## [1.1.0] - 2026-03-20
+
+비밀번호 시스템 도입 및 `CROSSxPrivateSDK` 신설.
+
+### Added
+- `CROSSxPrivateSDK` — 니모닉/개인키 조회, 비밀번호 변경, 탈퇴
+- 비밀번호 시스템 (`PasswordStorePort`, `KeychainPasswordStoreAdapter`, `PasswordPresenter`) 및 동의 화면
+- `POST /mnemonic/verify-pin` API, mnemonic/migrate PIN 시도 횟수 제한(`-10027`)
+- `createWallet`에 `migrateAutomatically` 옵션
+
+### Changed
+- 마이그레이션 플로우 개선 (verifyPin → 비밀번호 설정 → migrate)
+- 탈퇴 API를 `CROSSxPrivateSDK` 전용으로 제한
+- embedded-wallet-gateway API 변경 반영
+- Figma 컬러 토큰 적용
+
+### Fixed
+- withdraw 비밀번호 모달을 API 호출 중에도 유지하고 오류를 인라인 표시
+
+## [1.0.1] - 2026-03-13
+
+### Added
+- SDK 다국어(i18n) 지원 인프라
+- `selectWallet()` API 및 지갑 선택 모달 (`currentAddress` 파라미터, selected 배지)
+
+### Changed
+- `CrossWebAuthKit`을 독립 하위 패키지로 분리 (iOS 13 지원)
+- `getUserInfo` 응답 구조 개선 및 OAuth state CSRF 방어 강화
+- 내부 로그·메시지 한국어 → 영어 전환
+- `scripts/tag-release.sh` 도입 — 태그 push 전 `swift build` · `swift test` 자동 실행
+
+## [1.0.0] - 2026-03-09
+
+최초 공개 릴리즈. OAuth 인증과 Embedded Wallet 기능을 제공합니다.
+
+### Added
+- `ChainMeta` 통합 모델 및 TTL 기반 체인 캐시
+
+### Changed
+- Gateway RPC 프록시를 직접 RPC 호출로 전환
+- 블록체인 숫자 처리를 `UInt64` → `Decimal`로 전환해 오버플로우 방지
+
+### Fixed
+- 로그인 시트의 Terms/Privacy 링크를 외부 브라우저로 열도록 변경
+

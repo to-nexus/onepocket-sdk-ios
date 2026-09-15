@@ -435,21 +435,26 @@ public enum NetworkError : Foundation.LocalizedError, Swift.Sendable {
   case invalidURL(Swift.String)
   case invalidResponse
   case connectionFailed(Foundation.URLError)
-  case unauthorized
-  case forbidden
+  case unauthorized(body: Swift.String? = nil)
+  case forbidden(body: Swift.String? = nil)
   case notFound(Swift.String, body: Swift.String? = nil)
-  case rateLimited
-  case serverError(statusCode: Swift.Int)
-  case httpError(statusCode: Swift.Int)
+  case rateLimited(body: Swift.String? = nil)
+  case serverError(statusCode: Swift.Int, body: Swift.String? = nil)
+  case httpError(statusCode: Swift.Int, body: Swift.String? = nil)
   case decodingFailed(Swift.String)
   case unknown(any Swift.Error)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var responseBody: Swift.String? {
+    get
+  }
+  #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
   #endif
 }
-@_Concurrency.MainActor final public class CROSSxOAuthAdapter : @preconcurrency CROSSxCoreSDK.OAuthPort {
+@_Concurrency.MainActor final public class ONEpocketOAuthAdapter : @preconcurrency CROSSxCoreSDK.OAuthPort {
   #if compiler(>=5.3) && $NonescapableTypes
   nonisolated public init(window: UIKit.UIWindow? = nil, prefersEphemeralSession: Swift.Bool = false)
   #endif
@@ -458,6 +463,8 @@ public enum NetworkError : Foundation.LocalizedError, Swift.Sendable {
   @_Concurrency.MainActor final public func closeAuthFlow()
   @objc deinit
 }
+@available(*, deprecated, renamed: "ONEpocketOAuthAdapter")
+public typealias CROSSxOAuthAdapter = CROSSxCoreSDK.ONEpocketOAuthAdapter
 public enum OAuthError : Foundation.LocalizedError, Swift.Sendable {
   case userCancelled
   case authSessionFailed(Swift.String)
@@ -774,7 +781,7 @@ public enum Log {
 }
 public enum SdkErrorMapper {
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func mapBackendError(code: Swift.Int, message: Swift.String, rawJSON: [Swift.String : Any]? = nil) -> CROSSxCoreSDK.CROSSxError
+  public static func mapBackendError(code: Swift.Int, message: Swift.String, rawJSON: [Swift.String : Any]? = nil) -> CROSSxCoreSDK.ONEpocketError
   #endif
 }
 public actor TokenStore {
@@ -1013,7 +1020,7 @@ public struct LoadResponseData : Swift.Decodable {
   public let nonce: Swift.Int?
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum CROSSxError : Foundation.LocalizedError, Swift.Sendable {
+public enum ONEpocketError : Foundation.LocalizedError, Swift.Sendable {
   case invalidConfig(Swift.String)
   case configurationMissing(key: Swift.String, guidance: Swift.String)
   case notInitialized
@@ -1085,6 +1092,8 @@ public enum CROSSxError : Foundation.LocalizedError, Swift.Sendable {
     get
   }
 }
+@available(*, deprecated, renamed: "ONEpocketError")
+public typealias CROSSxError = CROSSxCoreSDK.ONEpocketError
 public struct EvmTransactionRequest : Swift.Sendable {
   public let from: Swift.String
   public let to: Swift.String
@@ -1692,7 +1701,7 @@ public class WithdrawUseCase : @unchecked Swift.Sendable {
   public func execute(password: Swift.String) async throws
   @objc deinit
 }
-@_hasMissingDesignatedInitializers final public class CROSSxSDK {
+@_hasMissingDesignatedInitializers final public class ONEpocketSDK {
   public static let version: Swift.String
   final public let config: CROSSxCoreSDK.SDKConfig
   public init(config: CROSSxCoreSDK.SDKConfig) throws
@@ -1778,7 +1787,7 @@ public class WithdrawUseCase : @unchecked Swift.Sendable {
   final public func waitForTxAndGetReceipt(txHash: Swift.String, chainId: Swift.String, timeoutMs: Swift.Int = 30_000, pollIntervalMs: Swift.Int = 1_000) async throws -> CROSSxCoreSDK.TransactionReceipt
   @objc deinit
 }
-public struct CROSSxSDKContext : Swift.Sendable {
+public struct ONEpocketSDKContext : Swift.Sendable {
   public let network: any CROSSxCoreSDK.NetworkPort
   public let storage: any CROSSxCoreSDK.StoragePort
   public let passwordStore: any CROSSxCoreSDK.PasswordStorePort
@@ -1792,9 +1801,13 @@ public struct CROSSxSDKContext : Swift.Sendable {
   public let themeProvider: CROSSxCoreSDK.ThemeProvider
   public let pinEncryptor: any CROSSxCoreSDK.PinEncryptorPort
 }
-extension CROSSxCoreSDK.CROSSxSDK {
-  final public func makePrivateContext() -> CROSSxCoreSDK.CROSSxSDKContext
+extension CROSSxCoreSDK.ONEpocketSDK {
+  final public func makePrivateContext() -> CROSSxCoreSDK.ONEpocketSDKContext
 }
+@available(*, deprecated, renamed: "ONEpocketSDK")
+public typealias CROSSxSDK = CROSSxCoreSDK.ONEpocketSDK
+@available(*, deprecated, renamed: "ONEpocketSDKContext")
+public typealias CROSSxSDKContext = CROSSxCoreSDK.ONEpocketSDKContext
 extension CROSSxCoreSDK.MigrationPresenter.PromptResult : Swift.Equatable {}
 extension CROSSxCoreSDK.MigrationPresenter.PromptResult : Swift.Hashable {}
 extension CROSSxCoreSDK.TransactionConfirmationDetails.ActionType : Swift.Equatable {}

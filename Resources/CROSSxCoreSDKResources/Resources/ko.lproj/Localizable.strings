@@ -130,7 +130,7 @@
 "migration.pin_locked_permanent" = "시도 횟수 초과로 계정이 영구 잠금되었습니다.";
 
 // =============================================================================
-// MARK: - CROSSxError
+// MARK: - ONEpocketError
 // =============================================================================
 
 "error.crossx.invalid_config" = "잘못된 설정: %@";
@@ -171,7 +171,7 @@
 "error.crossx.wallet_inconsistent_state" = "지갑 상태가 비정상입니다. 고객 지원에 문의해 주세요.";
 "error.crossx.hmac_signature_missing" = "이 API에는 X-HMAC-Signature 헤더가 필요합니다.";
 "error.crossx.hmac_signature_invalid" = "HMAC 서명 검증에 실패했습니다.";
-"error.crossx.hmac_key_not_configured" = "HMAC 키가 설정되지 않았습니다. CROSSxPrivateSDK 초기화 시 hmacKey를 설정하세요.";
+"error.crossx.hmac_key_not_configured" = "HMAC 키가 설정되지 않았습니다. ONEpocketPrivateSDK 초기화 시 hmacKey를 설정하세요.";
 "error.crossx.invalid_encrypted_pin" = "PIN을 안전하게 확인하지 못했습니다. 다시 시도해 주세요.";
 "error.crossx.pin_policy_violation" = "사용할 수 없는 PIN입니다. 연속된 숫자(123456), 같은 숫자 3회 이상(111234), 반복 패턴(121212)은 사용할 수 없습니다.";
 "error.crossx.pin_encryption_failed" = "PIN 암호화에 실패했습니다: %@";

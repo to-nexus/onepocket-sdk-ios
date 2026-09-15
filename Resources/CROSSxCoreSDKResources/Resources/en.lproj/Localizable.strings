@@ -130,7 +130,7 @@
 "migration.pin_locked_permanent" = "Account is permanently locked due to too many failed attempts.";
 
 // =============================================================================
-// MARK: - CROSSxError
+// MARK: - ONEpocketError
 // =============================================================================
 
 "error.crossx.invalid_config" = "Invalid configuration: %@";
@@ -171,7 +171,7 @@
 "error.crossx.wallet_inconsistent_state" = "Wallet is in an inconsistent state. Please contact support.";
 "error.crossx.hmac_signature_missing" = "X-HMAC-Signature header is required for this API.";
 "error.crossx.hmac_signature_invalid" = "HMAC signature verification failed.";
-"error.crossx.hmac_key_not_configured" = "HMAC key is not configured. Set hmacKey when initializing CROSSxPrivateSDK.";
+"error.crossx.hmac_key_not_configured" = "HMAC key is not configured. Set hmacKey when initializing ONEpocketPrivateSDK.";
 "error.crossx.invalid_encrypted_pin" = "Could not verify your PIN securely. Please try again.";
 "error.crossx.pin_policy_violation" = "This PIN is not allowed. Avoid sequences (123456), 3 or more repeated digits (111234), and repeating patterns (121212).";
 "error.crossx.pin_encryption_failed" = "Failed to encrypt PIN: %@";
