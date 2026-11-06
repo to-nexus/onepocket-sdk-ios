@@ -1,5 +1,44 @@
 # Changelog
 
+## [Unreleased]
+
+## [2.5.1] - 2026-11-06
+
+이행점검(2026-10-15) 잔존 Medium 3건 조치, SkipConfirm PIN 폴백, 니모닉·개인키 조회 PIN 강제 옵션.
+
+### Security
+- 로그아웃 뒤 완료된 토큰 갱신이 세션을 다시 설치하던 문제 (M-NEW-006) — 갱신은 시작 시점의
+  세션 세대에 묶이고, 응답 도착 시 세션이 바뀌었으면 메모리·Keychain에 설치하지 않고
+  `CancellationError`로 끝난다(세션 만료 `sessionExpired`와 구분). 같은 Keychain service·
+  accessGroup을 쓰는 SDK 인스턴스끼리 로그아웃 세대를 공유한다
+- 생체 등록 변경 후 기존 PIN 캐시가 열리던 문제 (M-NEW-007) — 생체 보호 PIN을
+  `biometryCurrentSet`으로 저장. 이전 버전의 `biometryAny` 캐시는 사용하지 않고 삭제하므로
+  **업데이트 후 생체 사용자는 PIN을 한 번 다시 입력**해야 한다. 다시 입력한 PIN은 생체 보호로 저장한다
+- 생체 잠금 등 일시 불가 시 PIN 캐시가 생체 보호 없이 재저장되던 문제 (M-NEW-008) —
+  잠금과 미등록을 구분하고, 생체 보호를 원하는데 지금 쓸 수 없으면 보호 없이 저장하지 않는다
+  (`PasswordStoreError.biometryUnavailable`, 기존 캐시는 유지). 생체 보호를 원하는 등록 기기에
+  남은 보호 없는 캐시도 사용하지 않는다. 미등록 기기의 일반 저장, `useBiometric: false` 저장은 그대로
+
+### Added
+- `StoragePort.sessionScopeID` (기본 구현 `nil`) — 같은 저장 영역을 쓰는 인스턴스 식별
+- `PasswordStoreError.biometryUnavailable`
+- Private SDK `getMnemonic(requirePin:)`, `getPrivateKey(index:requirePin:)` — `requirePin: true`면
+  Keychain(생체 인증) PIN을 쓰지 않고 항상 Enter PIN 모달을 표시하며, 입력한 PIN은 Keychain에 저장하지 않는다.
+  기본값 `false`라 기존 호출 동작은 같다
+
+### Changed
+- `setBiometricEnabled(true)`가 생체 잠금 중이면 `ONEpocketError.biometricFailed`를 던진다
+- Private SDK `*SkipConfirm`: PIN 캐시가 없거나(미저장·보호 정책으로 폐기·생체 실패/취소) 캐시된 PIN이
+  서버에서 불일치로 거부되면 `userReject`/`passwordWrong`으로 끝내지 않고 Enter PIN 모달로 같은 작업을
+  계속한다. 불일치한 캐시는 삭제하고 성공한 PIN을 다시 캐시한다. 확인 UI는 여전히 표시하지 않으며,
+  prepare는 PIN 시도마다 새로 한다
+
+### Fixed
+- 캐시된 PIN이 `passwordLocked`로 거부되면 캐시를 지우지 않아, 잠금이 풀린 뒤에도 같은 틀린 PIN으로
+  시도 횟수를 계속 소모하던 문제 — 항상 캐시를 지운다. 잔여 시도가 남았으면(미잠금) `passwordWrong`과
+  같이 Enter PIN 모달로 넘어가고, 잠겼으면 `passwordLocked`를 그대로 던진다 (공개·Private SDK 공통)
+- SkipConfirm 트랜잭션에서 PIN 재입력마다 가스·nonce RPC를 다시 조회하지 않는다 (prepare만 시도마다)
+
 ## [2.5.0] - 2026-09-15
 
 ONEpocket 리브랜딩을 위한 신규 Swift API를 추가하고 기존 CROSSx API를 deprecated 호환 alias로 유지합니다.
