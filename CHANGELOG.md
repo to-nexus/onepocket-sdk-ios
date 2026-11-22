@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+### Fixed
+- **원아이디 모드 확인 화면 없는 서명 · 전송** (DEV2TF-2909) — `ONEpocketPrivateSDK` 의 `signMessageSkipConfirm` ·
+  `signTypedDataSkipConfirm` · `signTransactionSkipConfirm` · `sendTransactionSkipConfirm`(· `...WithWaitForReceiptSkipConfirm`)이
+  원아이디 세션에서 2.x 토큰을 먼저 확인해, 2.x 토큰이 없는 원아이디 사용자는 서명 요청 전에 늘 `sessionExpired` 였다.
+  원아이디 모드면 공개 API 서명과 같은 PIN 흐름(메모리 PIN 15분 재사용 · 위험 요청 재확인 · 2.x Keychain PIN 미사용)으로 보낸다.
+  `ONEpocketOneWalletPrivateOperations.withSigningPin` · `ONEpocketOneWalletSigningRequest` 추가
+
 ## [3.0.0] - 배포일 미정
 
 원아이디(ONE ID) 로그인과 3.0 지갑 서버(one-wallet-api) 연동. 원아이디 키가 없는 앱은 2.x 동작이 그대로다.

@@ -1665,6 +1665,12 @@ extension CROSSxCoreSDK::ONEpocketSDK {
   final public func getOneIdSession() async throws -> CROSSxCoreSDK::ONEpocketOneIdSession?
   final public func signOutOneId() async
 }
+public enum ONEpocketOneWalletSigningRequest : Swift::Sendable, Swift::Equatable {
+  case transaction(data: Swift::String?)
+  case message
+  case typedData(Foundation::Data)
+  public static func == (a: CROSSxCoreSDK::ONEpocketOneWalletSigningRequest, b: CROSSxCoreSDK::ONEpocketOneWalletSigningRequest) -> Swift::Bool
+}
 public struct ONEpocketOneWalletPrivateOperations : Swift::Sendable {
   public let isActive: @Sendable () async throws -> Swift::Bool
   public let verifyPin: @Sendable (_ pin: Swift::String) async throws -> Swift::Void
@@ -1672,6 +1678,7 @@ public struct ONEpocketOneWalletPrivateOperations : Swift::Sendable {
   public let exportMnemonic: @Sendable (_ pin: Swift::String) async throws -> Swift::String
   public let exportPrivateKey: @Sendable (_ pin: Swift::String, _ index: Swift::Int) async throws -> Swift::String
   public let deleteWallet: @Sendable (_ pin: Swift::String) async throws -> Swift::Void
+  public let withSigningPin: @Sendable (_ request: CROSSxCoreSDK::ONEpocketOneWalletSigningRequest, _ operation: @escaping @Sendable (_ pin: Swift::String) async throws -> any Swift::Sendable) async throws -> any Swift::Sendable
 }
 extension CROSSxCoreSDK::MigrationPresenter.CROSSxCoreSDK::PromptResult : Swift::Equatable {}
 extension CROSSxCoreSDK::MigrationPresenter.CROSSxCoreSDK::PromptResult : Swift::Hashable {}
