@@ -6,8 +6,16 @@
 - **원아이디 모드 확인 화면 없는 서명 · 전송** (DEV2TF-2909) — `ONEpocketPrivateSDK` 의 `signMessageSkipConfirm` ·
   `signTypedDataSkipConfirm` · `signTransactionSkipConfirm` · `sendTransactionSkipConfirm`(· `...WithWaitForReceiptSkipConfirm`)이
   원아이디 세션에서 2.x 토큰을 먼저 확인해, 2.x 토큰이 없는 원아이디 사용자는 서명 요청 전에 늘 `sessionExpired` 였다.
-  원아이디 모드면 공개 API 서명과 같은 PIN 흐름(메모리 PIN 15분 재사용 · 위험 요청 재확인 · 2.x Keychain PIN 미사용)으로 보낸다.
+  원아이디 모드면 공개 API 서명과 같은 PIN 흐름으로 보낸다.
   `ONEpocketOneWalletPrivateOperations.withSigningPin` · `ONEpocketOneWalletSigningRequest` 추가
+
+### Changed
+- **원아이디 모드 PIN 을 2.x 와 같게 저장** (DEV2TF-2910) — 메모리 15분 재사용 · 위험 요청(승인 · Permit) 재확인을 없애고,
+  2.x 와 같은 Keychain 항목에 저장해 만료 없이 재사용한다. 앱을 다시 실행해도 PIN 을 다시 묻지 않는다.
+  생체 보호는 2.x 와 같이 `setBiometricEnabled` 가 정한다. 원아이디 로그인 · 로그아웃 · 탈퇴 · 세션 종료 감지 때 저장 PIN 을 지운다
+  (원아이디 로그인 때 남아 있던 2.x PIN 도 지운다). 결정: `context/decisions/0010-oneid-pin-same-store-as-2x.md`
+  원아이디 모드에서 저장 PIN 이 없을 때 `setBiometricEnabled` 는 입력 PIN 을 서버로 확인한 뒤 저장한다.
+  `ONEpocketPrivateSDK.savePin` 은 확인하지 않으므로 앱이 확인한 PIN 만 넘긴다.
 
 ## [3.0.0] - 배포일 미정
 
