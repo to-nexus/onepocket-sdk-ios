@@ -4449,6 +4449,384 @@
           },
           {
             "kind": "Var",
+            "name": "errorOneIdTermsNotAgreed",
+            "printedName": "errorOneIdTermsNotAgreed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK4L10nO24errorOneIdTermsNotAgreedSSvpZ",
+            "mangledName": "$s13CROSSxCoreSDK4L10nO24errorOneIdTermsNotAgreedSSvpZ",
+            "moduleName": "CROSSxCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK4L10nO24errorOneIdTermsNotAgreedSSvgZ",
+                "mangledName": "$s13CROSSxCoreSDK4L10nO24errorOneIdTermsNotAgreedSSvgZ",
+                "moduleName": "CROSSxCoreSDK",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorOneIdAccountNotFound",
+            "printedName": "errorOneIdAccountNotFound",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK4L10nO25errorOneIdAccountNotFoundSSvpZ",
+            "mangledName": "$s13CROSSxCoreSDK4L10nO25errorOneIdAccountNotFoundSSvpZ",
+            "moduleName": "CROSSxCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK4L10nO25errorOneIdAccountNotFoundSSvgZ",
+                "mangledName": "$s13CROSSxCoreSDK4L10nO25errorOneIdAccountNotFoundSSvgZ",
+                "moduleName": "CROSSxCoreSDK",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorOneIdServiceNotLinked",
+            "printedName": "errorOneIdServiceNotLinked",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK4L10nO26errorOneIdServiceNotLinkedSSvpZ",
+            "mangledName": "$s13CROSSxCoreSDK4L10nO26errorOneIdServiceNotLinkedSSvpZ",
+            "moduleName": "CROSSxCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK4L10nO26errorOneIdServiceNotLinkedSSvgZ",
+                "mangledName": "$s13CROSSxCoreSDK4L10nO26errorOneIdServiceNotLinkedSSvgZ",
+                "moduleName": "CROSSxCoreSDK",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorOneIdAuthorizationFailed",
+            "printedName": "errorOneIdAuthorizationFailed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK4L10nO29errorOneIdAuthorizationFailedSSvpZ",
+            "mangledName": "$s13CROSSxCoreSDK4L10nO29errorOneIdAuthorizationFailedSSvpZ",
+            "moduleName": "CROSSxCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK4L10nO29errorOneIdAuthorizationFailedSSvgZ",
+                "mangledName": "$s13CROSSxCoreSDK4L10nO29errorOneIdAuthorizationFailedSSvgZ",
+                "moduleName": "CROSSxCoreSDK",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorOneIdStateMismatch",
+            "printedName": "errorOneIdStateMismatch",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK4L10nO23errorOneIdStateMismatchSSvpZ",
+            "mangledName": "$s13CROSSxCoreSDK4L10nO23errorOneIdStateMismatchSSvpZ",
+            "moduleName": "CROSSxCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK4L10nO23errorOneIdStateMismatchSSvgZ",
+                "mangledName": "$s13CROSSxCoreSDK4L10nO23errorOneIdStateMismatchSSvgZ",
+                "moduleName": "CROSSxCoreSDK",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorOneIdIssuerMismatch",
+            "printedName": "errorOneIdIssuerMismatch",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK4L10nO24errorOneIdIssuerMismatchSSvpZ",
+            "mangledName": "$s13CROSSxCoreSDK4L10nO24errorOneIdIssuerMismatchSSvpZ",
+            "moduleName": "CROSSxCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK4L10nO24errorOneIdIssuerMismatchSSvgZ",
+                "mangledName": "$s13CROSSxCoreSDK4L10nO24errorOneIdIssuerMismatchSSvgZ",
+                "moduleName": "CROSSxCoreSDK",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorOneIdTimeout",
+            "printedName": "errorOneIdTimeout",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK4L10nO17errorOneIdTimeoutSSvpZ",
+            "mangledName": "$s13CROSSxCoreSDK4L10nO17errorOneIdTimeoutSSvpZ",
+            "moduleName": "CROSSxCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK4L10nO17errorOneIdTimeoutSSvgZ",
+                "mangledName": "$s13CROSSxCoreSDK4L10nO17errorOneIdTimeoutSSvgZ",
+                "moduleName": "CROSSxCoreSDK",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorOneIdSessionEvicted",
+            "printedName": "errorOneIdSessionEvicted",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK4L10nO24errorOneIdSessionEvictedSSvpZ",
+            "mangledName": "$s13CROSSxCoreSDK4L10nO24errorOneIdSessionEvictedSSvpZ",
+            "moduleName": "CROSSxCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK4L10nO24errorOneIdSessionEvictedSSvgZ",
+                "mangledName": "$s13CROSSxCoreSDK4L10nO24errorOneIdSessionEvictedSSvgZ",
+                "moduleName": "CROSSxCoreSDK",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorOneIdSessionEnded",
+            "printedName": "errorOneIdSessionEnded",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK4L10nO22errorOneIdSessionEndedSSvpZ",
+            "mangledName": "$s13CROSSxCoreSDK4L10nO22errorOneIdSessionEndedSSvpZ",
+            "moduleName": "CROSSxCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK4L10nO22errorOneIdSessionEndedSSvgZ",
+                "mangledName": "$s13CROSSxCoreSDK4L10nO22errorOneIdSessionEndedSSvgZ",
+                "moduleName": "CROSSxCoreSDK",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "errorHmacSignatureMissing",
             "printedName": "errorHmacSignatureMissing",
             "children": [
@@ -6672,6 +7050,70 @@
             "mangledName": "$s13CROSSxCoreSDK17URLSessionAdapterC7session14defaultTimeout0G7HeadersACSo12NSURLSessionC_SdSDyS2SGtcfc",
             "moduleName": "CROSSxCoreSDK",
             "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(session:defaultTimeout:defaultHeaders:logsBodies:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionAdapter",
+                "printedName": "CROSSxCoreSDK.URLSessionAdapter",
+                "usr": "s:13CROSSxCoreSDK17URLSessionAdapterC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13CROSSxCoreSDK17URLSessionAdapterC7session14defaultTimeout0G7Headers10logsBodiesACSo12NSURLSessionC_SdSDyS2SGSbtcfc",
+            "mangledName": "$s13CROSSxCoreSDK17URLSessionAdapterC7session14defaultTimeout0G7Headers10logsBodiesACSo12NSURLSessionC_SdSDyS2SGSbtcfc",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
               "AccessControl",
               "RawDocComment"
             ],
@@ -8372,6 +8814,132 @@
             "mangledName": "$ss16SendableMetatypeP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CrossWebAuthKit",
+        "printedName": "CrossWebAuthKit",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
       },
       {
         "kind": "Import",
@@ -15425,6 +15993,41 @@
         "moduleName": "CROSSxCoreSDK"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "PasswordStorePort",
         "printedName": "PasswordStorePort",
@@ -17363,6 +17966,74 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mapOneIdAuthorizationError",
+            "printedName": "mapOneIdAuthorizationError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ONEpocketError",
+                "printedName": "CROSSxCoreSDK.ONEpocketError",
+                "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13CROSSxCoreSDK14SdkErrorMapperO021mapOneIdAuthorizationE0yAA09ONEpocketE0OSSFZ",
+            "mangledName": "$s13CROSSxCoreSDK14SdkErrorMapperO021mapOneIdAuthorizationE0yAA09ONEpocketE0OSSFZ",
+            "moduleName": "CROSSxCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mapOneIdSessionEndReason",
+            "printedName": "mapOneIdSessionEndReason(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ONEpocketError",
+                "printedName": "CROSSxCoreSDK.ONEpocketError",
+                "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13CROSSxCoreSDK14SdkErrorMapperO24mapOneIdSessionEndReasonyAA09ONEpocketE0OSSSgFZ",
+            "mangledName": "$s13CROSSxCoreSDK14SdkErrorMapperO24mapOneIdSessionEndReasonyAA09ONEpocketE0OSSSgFZ",
+            "moduleName": "CROSSxCoreSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Enum",
@@ -18280,6 +18951,34 @@
             "mangledName": "$ss16SendableMetatypeP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
       },
       {
         "kind": "Import",
@@ -26669,6 +27368,474 @@
           },
           {
             "kind": "Var",
+            "name": "oneIdTermsNotAgreed",
+            "printedName": "oneIdTermsNotAgreed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CROSSxCoreSDK.ONEpocketError.Type) -> CROSSxCoreSDK.ONEpocketError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ONEpocketError",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError",
+                    "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ONEpocketError",
+                        "printedName": "CROSSxCoreSDK.ONEpocketError",
+                        "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO19oneIdTermsNotAgreedyA2CmF",
+            "mangledName": "$s13CROSSxCoreSDK14ONEpocketErrorO19oneIdTermsNotAgreedyA2CmF",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "oneIdAccountNotFound",
+            "printedName": "oneIdAccountNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CROSSxCoreSDK.ONEpocketError.Type) -> CROSSxCoreSDK.ONEpocketError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ONEpocketError",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError",
+                    "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ONEpocketError",
+                        "printedName": "CROSSxCoreSDK.ONEpocketError",
+                        "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO20oneIdAccountNotFoundyA2CmF",
+            "mangledName": "$s13CROSSxCoreSDK14ONEpocketErrorO20oneIdAccountNotFoundyA2CmF",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "oneIdServiceNotLinked",
+            "printedName": "oneIdServiceNotLinked",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CROSSxCoreSDK.ONEpocketError.Type) -> CROSSxCoreSDK.ONEpocketError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ONEpocketError",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError",
+                    "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ONEpocketError",
+                        "printedName": "CROSSxCoreSDK.ONEpocketError",
+                        "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO21oneIdServiceNotLinkedyA2CmF",
+            "mangledName": "$s13CROSSxCoreSDK14ONEpocketErrorO21oneIdServiceNotLinkedyA2CmF",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "oneIdAuthorizationFailed",
+            "printedName": "oneIdAuthorizationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CROSSxCoreSDK.ONEpocketError.Type) -> (Swift.String?) -> CROSSxCoreSDK.ONEpocketError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String?) -> CROSSxCoreSDK.ONEpocketError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ONEpocketError",
+                        "printedName": "CROSSxCoreSDK.ONEpocketError",
+                        "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: Swift.String?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ONEpocketError",
+                        "printedName": "CROSSxCoreSDK.ONEpocketError",
+                        "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO24oneIdAuthorizationFailedyACSSSg_tcACmF",
+            "mangledName": "$s13CROSSxCoreSDK14ONEpocketErrorO24oneIdAuthorizationFailedyACSSSg_tcACmF",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "oneIdStateMismatch",
+            "printedName": "oneIdStateMismatch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CROSSxCoreSDK.ONEpocketError.Type) -> CROSSxCoreSDK.ONEpocketError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ONEpocketError",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError",
+                    "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ONEpocketError",
+                        "printedName": "CROSSxCoreSDK.ONEpocketError",
+                        "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO18oneIdStateMismatchyA2CmF",
+            "mangledName": "$s13CROSSxCoreSDK14ONEpocketErrorO18oneIdStateMismatchyA2CmF",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "oneIdIssuerMismatch",
+            "printedName": "oneIdIssuerMismatch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CROSSxCoreSDK.ONEpocketError.Type) -> CROSSxCoreSDK.ONEpocketError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ONEpocketError",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError",
+                    "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ONEpocketError",
+                        "printedName": "CROSSxCoreSDK.ONEpocketError",
+                        "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO19oneIdIssuerMismatchyA2CmF",
+            "mangledName": "$s13CROSSxCoreSDK14ONEpocketErrorO19oneIdIssuerMismatchyA2CmF",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "oneIdTimeout",
+            "printedName": "oneIdTimeout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CROSSxCoreSDK.ONEpocketError.Type) -> CROSSxCoreSDK.ONEpocketError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ONEpocketError",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError",
+                    "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ONEpocketError",
+                        "printedName": "CROSSxCoreSDK.ONEpocketError",
+                        "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO12oneIdTimeoutyA2CmF",
+            "mangledName": "$s13CROSSxCoreSDK14ONEpocketErrorO12oneIdTimeoutyA2CmF",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "oneIdSessionEvicted",
+            "printedName": "oneIdSessionEvicted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CROSSxCoreSDK.ONEpocketError.Type) -> CROSSxCoreSDK.ONEpocketError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ONEpocketError",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError",
+                    "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ONEpocketError",
+                        "printedName": "CROSSxCoreSDK.ONEpocketError",
+                        "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO19oneIdSessionEvictedyA2CmF",
+            "mangledName": "$s13CROSSxCoreSDK14ONEpocketErrorO19oneIdSessionEvictedyA2CmF",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "oneIdSessionRevoked",
+            "printedName": "oneIdSessionRevoked",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CROSSxCoreSDK.ONEpocketError.Type) -> CROSSxCoreSDK.ONEpocketError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ONEpocketError",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError",
+                    "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ONEpocketError",
+                        "printedName": "CROSSxCoreSDK.ONEpocketError",
+                        "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO19oneIdSessionRevokedyA2CmF",
+            "mangledName": "$s13CROSSxCoreSDK14ONEpocketErrorO19oneIdSessionRevokedyA2CmF",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "oneIdSessionExpired",
+            "printedName": "oneIdSessionExpired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CROSSxCoreSDK.ONEpocketError.Type) -> CROSSxCoreSDK.ONEpocketError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ONEpocketError",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError",
+                    "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ONEpocketError",
+                        "printedName": "CROSSxCoreSDK.ONEpocketError",
+                        "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO19oneIdSessionExpiredyA2CmF",
+            "mangledName": "$s13CROSSxCoreSDK14ONEpocketErrorO19oneIdSessionExpiredyA2CmF",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "oneIdSessionInvalid",
+            "printedName": "oneIdSessionInvalid",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CROSSxCoreSDK.ONEpocketError.Type) -> CROSSxCoreSDK.ONEpocketError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ONEpocketError",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError",
+                    "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CROSSxCoreSDK.ONEpocketError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ONEpocketError",
+                        "printedName": "CROSSxCoreSDK.ONEpocketError",
+                        "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13CROSSxCoreSDK14ONEpocketErrorO19oneIdSessionInvalidyA2CmF",
+            "mangledName": "$s13CROSSxCoreSDK14ONEpocketErrorO19oneIdSessionInvalidyA2CmF",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "errorDescription",
             "printedName": "errorDescription",
             "children": [
@@ -34999,6 +36166,27 @@
             "mangledName": "$ss16SendableMetatypeP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
       },
       {
         "kind": "Import",
@@ -46508,6 +47696,13 @@
         "moduleName": "CROSSxCoreSDK"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "SignOutUseCase",
         "printedName": "SignOutUseCase",
@@ -49684,6 +50879,111 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isOneIdLoginAvailable",
+            "printedName": "isOneIdLoginAvailable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13CROSSxCoreSDK09ONEpocketC0C21isOneIdLoginAvailableSbyF",
+            "mangledName": "$s13CROSSxCoreSDK09ONEpocketC0C21isOneIdLoginAvailableSbyF",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signInWithOneId",
+            "printedName": "signInWithOneId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ONEpocketOneIdSession",
+                "printedName": "CROSSxCoreSDK.ONEpocketOneIdSession",
+                "usr": "s:13CROSSxCoreSDK21ONEpocketOneIdSessionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13CROSSxCoreSDK09ONEpocketC0C15signInWithOneIdAA0dhI7SessionVyYaKF",
+            "mangledName": "$s13CROSSxCoreSDK09ONEpocketC0C15signInWithOneIdAA0dhI7SessionVyYaKF",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getOneIdSession",
+            "printedName": "getOneIdSession()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CROSSxCoreSDK.ONEpocketOneIdSession?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ONEpocketOneIdSession",
+                    "printedName": "CROSSxCoreSDK.ONEpocketOneIdSession",
+                    "usr": "s:13CROSSxCoreSDK21ONEpocketOneIdSessionV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13CROSSxCoreSDK09ONEpocketC0C15getOneIdSessionAA0dfgH0VSgyYaKF",
+            "mangledName": "$s13CROSSxCoreSDK09ONEpocketC0C15getOneIdSessionAA0dfgH0VSgyYaKF",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signOutOneId",
+            "printedName": "signOutOneId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13CROSSxCoreSDK09ONEpocketC0C12signOutOneIdyyYaF",
+            "mangledName": "$s13CROSSxCoreSDK09ONEpocketC0C12signOutOneIdyyYaF",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -50271,11 +51571,893 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "requireLegacyWalletMode",
+            "printedName": "requireLegacyWalletMode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() async throws -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK19ONEpocketSDKContextV23requireLegacyWalletModeyyYaYbKcvp",
+            "mangledName": "$s13CROSSxCoreSDK19ONEpocketSDKContextV23requireLegacyWalletModeyyYaYbKcvp",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() async throws -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK19ONEpocketSDKContextV23requireLegacyWalletModeyyYaYbKcvg",
+                "mangledName": "$s13CROSSxCoreSDK19ONEpocketSDKContextV23requireLegacyWalletModeyyYaYbKcvg",
+                "moduleName": "CROSSxCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "oneWallet",
+            "printedName": "oneWallet",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ONEpocketOneWalletPrivateOperations",
+                "printedName": "CROSSxCoreSDK.ONEpocketOneWalletPrivateOperations",
+                "usr": "s:13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK19ONEpocketSDKContextV9oneWalletAA0d3OneG17PrivateOperationsVvp",
+            "mangledName": "$s13CROSSxCoreSDK19ONEpocketSDKContextV9oneWalletAA0d3OneG17PrivateOperationsVvp",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ONEpocketOneWalletPrivateOperations",
+                    "printedName": "CROSSxCoreSDK.ONEpocketOneWalletPrivateOperations",
+                    "usr": "s:13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK19ONEpocketSDKContextV9oneWalletAA0d3OneG17PrivateOperationsVvg",
+                "mangledName": "$s13CROSSxCoreSDK19ONEpocketSDKContextV9oneWalletAA0d3OneG17PrivateOperationsVvg",
+                "moduleName": "CROSSxCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
         "usr": "s:13CROSSxCoreSDK19ONEpocketSDKContextV",
         "mangledName": "$s13CROSSxCoreSDK19ONEpocketSDKContextV",
+        "moduleName": "CROSSxCoreSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ONEpocketOneIdSession",
+        "printedName": "ONEpocketOneIdSession",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "userId",
+            "printedName": "userId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK21ONEpocketOneIdSessionV04userF0SSvp",
+            "mangledName": "$s13CROSSxCoreSDK21ONEpocketOneIdSessionV04userF0SSvp",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK21ONEpocketOneIdSessionV04userF0SSvg",
+                "mangledName": "$s13CROSSxCoreSDK21ONEpocketOneIdSessionV04userF0SSvg",
+                "moduleName": "CROSSxCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expiresAt",
+            "printedName": "expiresAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK21ONEpocketOneIdSessionV9expiresAt10Foundation4DateVvp",
+            "mangledName": "$s13CROSSxCoreSDK21ONEpocketOneIdSessionV9expiresAt10Foundation4DateVvp",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK21ONEpocketOneIdSessionV9expiresAt10Foundation4DateVvg",
+                "mangledName": "$s13CROSSxCoreSDK21ONEpocketOneIdSessionV9expiresAt10Foundation4DateVvg",
+                "moduleName": "CROSSxCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "scope",
+            "printedName": "scope",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK21ONEpocketOneIdSessionV5scopeSSSgvp",
+            "mangledName": "$s13CROSSxCoreSDK21ONEpocketOneIdSessionV5scopeSSSgvp",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK21ONEpocketOneIdSessionV5scopeSSSgvg",
+                "mangledName": "$s13CROSSxCoreSDK21ONEpocketOneIdSessionV5scopeSSSgvg",
+                "moduleName": "CROSSxCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ONEpocketOneIdSession",
+                "printedName": "CROSSxCoreSDK.ONEpocketOneIdSession",
+                "usr": "s:13CROSSxCoreSDK21ONEpocketOneIdSessionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ONEpocketOneIdSession",
+                "printedName": "CROSSxCoreSDK.ONEpocketOneIdSession",
+                "usr": "s:13CROSSxCoreSDK21ONEpocketOneIdSessionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13CROSSxCoreSDK21ONEpocketOneIdSessionV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s13CROSSxCoreSDK21ONEpocketOneIdSessionV2eeoiySbAC_ACtFZ",
+            "moduleName": "CROSSxCoreSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13CROSSxCoreSDK21ONEpocketOneIdSessionV",
+        "mangledName": "$s13CROSSxCoreSDK21ONEpocketOneIdSessionV",
+        "moduleName": "CROSSxCoreSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CROSSxCoreSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ONEpocketOneWalletPrivateOperations",
+        "printedName": "ONEpocketOneWalletPrivateOperations",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isActive",
+            "printedName": "isActive",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() async throws -> Swift.Bool",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV8isActiveSbyYaYbKcvp",
+            "mangledName": "$s13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV8isActiveSbyYaYbKcvp",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() async throws -> Swift.Bool",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV8isActiveSbyYaYbKcvg",
+                "mangledName": "$s13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV8isActiveSbyYaYbKcvg",
+                "moduleName": "CROSSxCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "verifyPin",
+            "printedName": "verifyPin",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) async throws -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV9verifyPinyySSYaYbKcvp",
+            "mangledName": "$s13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV9verifyPinyySSYaYbKcvp",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) async throws -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV9verifyPinyySSYaYbKcvg",
+                "mangledName": "$s13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV9verifyPinyySSYaYbKcvg",
+                "moduleName": "CROSSxCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "changePin",
+            "printedName": "changePin",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, Swift.String) async throws -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV9changePinyySS_SStYaYbKcvp",
+            "mangledName": "$s13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV9changePinyySS_SStYaYbKcvp",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String) async throws -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV9changePinyySS_SStYaYbKcvg",
+                "mangledName": "$s13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV9changePinyySS_SStYaYbKcvg",
+                "moduleName": "CROSSxCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exportMnemonic",
+            "printedName": "exportMnemonic",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) async throws -> Swift.String",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV14exportMnemonicyS2SYaYbKcvp",
+            "mangledName": "$s13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV14exportMnemonicyS2SYaYbKcvp",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) async throws -> Swift.String",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV14exportMnemonicyS2SYaYbKcvg",
+                "mangledName": "$s13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV14exportMnemonicyS2SYaYbKcvg",
+                "moduleName": "CROSSxCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exportPrivateKey",
+            "printedName": "exportPrivateKey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, Swift.Int) async throws -> Swift.String",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, Swift.Int)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV06exportG3KeyyS2S_SitYaYbKcvp",
+            "mangledName": "$s13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV06exportG3KeyyS2S_SitYaYbKcvp",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.Int) async throws -> Swift.String",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV06exportG3KeyyS2S_SitYaYbKcvg",
+                "mangledName": "$s13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV06exportG3KeyyS2S_SitYaYbKcvg",
+                "moduleName": "CROSSxCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deleteWallet",
+            "printedName": "deleteWallet",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) async throws -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV06deleteF0yySSYaYbKcvp",
+            "mangledName": "$s13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV06deleteF0yySSYaYbKcvp",
+            "moduleName": "CROSSxCoreSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) async throws -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV06deleteF0yySSYaYbKcvg",
+                "mangledName": "$s13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV06deleteF0yySSYaYbKcvg",
+                "moduleName": "CROSSxCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV",
+        "mangledName": "$s13CROSSxCoreSDK35ONEpocketOneWalletPrivateOperationsV",
         "moduleName": "CROSSxCoreSDK",
         "declAttributes": [
           "AccessControl",
@@ -50613,21 +52795,35 @@
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/Network\/URLSessionAdapter.swift",
       "kind": "IntegerLiteral",
-      "offset": 799,
+      "offset": 844,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/Network\/URLSessionAdapter.swift",
       "kind": "Dictionary",
-      "offset": 846,
+      "offset": 891,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/Network\/URLSessionAdapter.swift",
       "kind": "IntegerLiteral",
-      "offset": 7859,
+      "offset": 1433,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/Network\/URLSessionAdapter.swift",
+      "kind": "Dictionary",
+      "offset": 1480,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/Network\/URLSessionAdapter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8580,
       "length": 3,
       "value": "200"
     },
@@ -50635,6 +52831,601 @@
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OAuth\/ASWebAuthAdapter.swift",
       "kind": "BooleanLiteral",
       "offset": 1153,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OAuth\/OneOAuthSessionAdapter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 657,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OAuth\/OneOAuthExchangeAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 1370,
+      "length": 49,
+      "value": "\"urn:ietf:params:oauth:grant-type:token-exchange\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OAuth\/OneOAuthExchangeAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 1454,
+      "length": 38,
+      "value": "\"urn:one-id:token-type:oneid-id-token\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OAuth\/OneOAuthExchangeAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 1629,
+      "length": 31,
+      "value": "\"openid profile offline_access\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletApiClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1261,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletApiClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1266,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletApiClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1865,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 7870,
+      "length": 14,
+      "value": "\"\/attestation\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 8060,
+      "length": 41,
+      "value": "\"attestation has no recipient_public_key\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletApiClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8140,
+      "length": 2,
+      "value": "65"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletApiClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8157,
+      "length": 4,
+      "value": "0x04"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 8303,
+      "length": 65,
+      "value": "\"recipient_public_key must be SEC1 uncompressed P-256 (65 bytes)\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletApiClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8914,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletAuthzKeyManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2297,
+      "length": 2,
+      "value": "90"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletAuthzKeyManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2479,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletAuthzKeyManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2982,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletAuthzKeyManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3143,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletAuthzKeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7382,
+      "length": 14,
+      "value": "\"response_key\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletAuthzKeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7774,
+      "length": 8,
+      "value": "\"key_id\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletAuthzKeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7841,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletAuthzKeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7884,
+      "length": 12,
+      "value": "\"session_id\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletAuthzKeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7929,
+      "length": 11,
+      "value": "\"issued_at\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletAuthzKeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7974,
+      "length": 12,
+      "value": "\"expires_at\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletAuthzKeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8205,
+      "length": 20,
+      "value": "\"sealed_private_key\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletAuthzKeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8253,
+      "length": 10,
+      "value": "\"key_cert\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletAuthzKeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8291,
+      "length": 10,
+      "value": "\"cert_sig\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletRepositoryAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 3105,
+      "length": 17,
+      "value": "\"m\/44'\/60'\/0'\/0\/\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletRepositoryAdapter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3666,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletRepositoryAdapter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4043,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletRepositoryAdapter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12464,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletRepositoryAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 30322,
+      "length": 27,
+      "value": "\"I agree to delete my data\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletRepositoryAdapter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 33872,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletRepositoryAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 47815,
+      "length": 15,
+      "value": "\"ignore_backup\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletRepositoryAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 48083,
+      "length": 10,
+      "value": "\"chain_id\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletRepositoryAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 48338,
+      "length": 10,
+      "value": "\"chain_id\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletRepositoryAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 48883,
+      "length": 10,
+      "value": "\"has_more\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletRepositoryAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 49151,
+      "length": 11,
+      "value": "\"signed_tx\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletRepositoryAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 49185,
+      "length": 9,
+      "value": "\"tx_hash\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletRepositoryAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 49341,
+      "length": 9,
+      "value": "\"tx_hash\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletRepositoryAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 49665,
+      "length": 17,
+      "value": "\"sealed_mnemonic\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletRepositoryAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 49913,
+      "length": 20,
+      "value": "\"sealed_private_key\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/OneWalletRepositoryAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 50170,
+      "length": 20,
+      "value": "\"remaining_attempts\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/WalletRepositoryRouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4372,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/WalletRepositoryRouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4865,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/WalletRepositoryRouter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11265,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletHPKE.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1768,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletHPKE.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1799,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletHPKE.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1835,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletHPKE.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1873,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletHPKE.swift",
+      "kind": "StringLiteral",
+      "offset": 1961,
+      "length": 6,
+      "value": "\"HPKE\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletHPKE.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1992,
+      "length": 6,
+      "value": "0x0010"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletHPKE.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2023,
+      "length": 6,
+      "value": "0x0001"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletHPKE.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2054,
+      "length": 6,
+      "value": "0x0002"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletHPKE.swift",
+      "kind": "StringLiteral",
+      "offset": 2146,
+      "length": 5,
+      "value": "\"KEM\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletHPKE.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2176,
+      "length": 6,
+      "value": "0x0010"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletHPKE.swift",
+      "kind": "StringLiteral",
+      "offset": 2243,
+      "length": 9,
+      "value": "\"HPKE-v1\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 316,
+      "length": 12,
+      "value": "\"verify_pin\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 350,
+      "length": 12,
+      "value": "\"change_pin\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 385,
+      "length": 13,
+      "value": "\"get_address\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 422,
+      "length": 14,
+      "value": "\"get_mnemonic\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 462,
+      "length": 17,
+      "value": "\"get_private_key\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 501,
+      "length": 13,
+      "value": "\"get_share_c\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 572,
+      "length": 17,
+      "value": "\"sign_typed_data\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 613,
+      "length": 14,
+      "value": "\"sign_message\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 1763,
+      "length": 8,
+      "value": "\"key_id\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 1814,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 1849,
+      "length": 12,
+      "value": "\"session_id\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 1886,
+      "length": 11,
+      "value": "\"issued_at\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 1923,
+      "length": 12,
+      "value": "\"expires_at\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 3332,
+      "length": 10,
+      "value": "\"redacted\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 3844,
+      "length": 12,
+      "value": "\"expires_at\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 3883,
+      "length": 13,
+      "value": "\"intent_hash\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 3923,
+      "length": 14,
+      "value": "\"authz_key_id\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 3962,
+      "length": 11,
+      "value": "\"authz_sig\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 4002,
+      "length": 16,
+      "value": "\"authz_key_cert\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5372,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5413,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5445,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 5481,
+      "length": 25,
+      "value": "\"one-wallet\/authz-sig\/v1\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 5539,
+      "length": 24,
+      "value": "\"one-wallet\/seal-aad\/v1\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 15831,
+      "length": 9,
+      "value": "\"new_pin\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 15871,
+      "length": 9,
+      "value": "\"share_c\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OneWallet\/Crypto\/OneWalletEnvelope.swift",
+      "kind": "StringLiteral",
+      "offset": 15916,
+      "length": 14,
+      "value": "\"response_key\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OAuth\/OneIdAuthAdapter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2791,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Adapters\/OAuth\/OneIdAuthAdapter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4205,
       "length": 5,
       "value": "false"
     },
@@ -51598,6 +54389,27 @@
       "value": "\"PATCH\""
     },
     {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Ports\/OneOAuthSessionPort.swift",
+      "kind": "StringLiteral",
+      "offset": 880,
+      "length": 17,
+      "value": "\"session_evicted\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Ports\/OneOAuthSessionPort.swift",
+      "kind": "StringLiteral",
+      "offset": 917,
+      "length": 17,
+      "value": "\"session_revoked\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Ports\/OneOAuthSessionPort.swift",
+      "kind": "StringLiteral",
+      "offset": 954,
+      "length": 17,
+      "value": "\"session_expired\""
+    },
+    {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/Log.swift",
       "kind": "BooleanLiteral",
       "offset": 669,
@@ -51631,6 +54443,160 @@
       "offset": 16345,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/OneIdSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2219,
+      "length": 22,
+      "value": "\"crossx.oneid.session\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/OneIdSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2389,
+      "length": 27,
+      "value": "\"crossx.oneid.sessionEnded\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/OneIdSessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2460,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/OneIdSessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2505,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/OneIdSessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3103,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/OneIdSessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3475,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/OneIdSessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3565,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/OneIdSessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3725,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/PinReusePolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 995,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/PinReusePolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1000,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/PinReusePolicy.swift",
+      "kind": "Array",
+      "offset": 1649,
+      "length": 320,
+      "value": "[\"095ea7b3\", \"a22cb465\", \"39509351\", \"d73dd623\", \"87517c45\"]"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/PinReusePolicy.swift",
+      "kind": "Array",
+      "offset": 2116,
+      "length": 216,
+      "value": "[\"Permit\", \"PermitSingle\", \"PermitBatch\", \"PermitTransferFrom\", \"PermitBatchTransferFrom\", \"PermitWitnessTransferFrom\", \"PermitBatchWitnessTransferFrom\"]"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/PinReusePolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5425,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/OneWalletRetryPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1202,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/OneIdAuthProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 645,
+      "length": 8,
+      "value": "\"openid\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/OneIdAuthProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 686,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/OneIdAuthProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 779,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/OneIdAuthProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 933,
+      "length": 4,
+      "value": "3600"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/OneIdAuthProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1046,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/OneIdAuthProtocol.swift",
+      "kind": "Dictionary",
+      "offset": 5759,
+      "length": 106,
+      "value": "[(\"Content-Type\", \"application\/x-www-form-urlencoded\"), (\"Accept\", \"application\/json\")]"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/OneIdAuthProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 12202,
+      "length": 64,
+      "value": "\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Services\/OneIdAuthProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 12301,
+      "length": 6,
+      "value": "\"-._~\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Types\/AuthResult.swift",
@@ -52048,23 +55014,72 @@
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Types\/SDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5142,
+      "offset": 6059,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Types\/SDKConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 7840,
+      "offset": 8757,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Types\/SDKConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 7862,
+      "offset": 8779,
       "length": 1,
       "value": "3"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Types\/OneIdEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 1219,
+      "length": 29,
+      "value": "\"CROSSxOneIdAuthorizeBaseURL\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Types\/OneIdEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 1400,
+      "length": 25,
+      "value": "\"CROSSxOneIdTokenBaseURL\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Types\/OneIdEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 1537,
+      "length": 21,
+      "value": "\"CROSSxOneIdClientId\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Types\/OneIdEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 1685,
+      "length": 24,
+      "value": "\"CROSSxOneIdRedirectURI\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Types\/OneIdEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 1854,
+      "length": 22,
+      "value": "\"CROSSxOneOAuthIssuer\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Types\/OneIdEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 2045,
+      "length": 24,
+      "value": "\"CROSSxOneOAuthClientId\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Types\/OneWalletEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 926,
+      "length": 27,
+      "value": "\"CROSSxOneWalletAPIBaseURL\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/Core\/Types\/SignatureResult.swift",
@@ -52280,253 +55295,274 @@
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
       "offset": 449,
-      "length": 7,
-      "value": "\"2.5.1\""
+      "length": 14,
+      "value": "\"3.0.0-beta.1\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3003,
+      "offset": 3011,
       "length": 41,
       "value": "\"https:\/\/one-wallet-oauth.onechain.nexus\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3126,
+      "offset": 3134,
       "length": 34,
       "value": "\"https:\/\/cross-auth.crosstoken.io\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3249,
+      "offset": 3257,
       "length": 54,
       "value": "\"https:\/\/embedded-wallet-gateway.crosstoken.io\/api\/v1\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3394,
+      "offset": 3402,
       "length": 44,
       "value": "\"https:\/\/wallet-server.crosstoken.io\/api\/v2\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3546,
+      "offset": 3554,
       "length": 48,
       "value": "\"https:\/\/stg-wallet-server.crosstoken.io\/api\/v2\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3685,
+      "offset": 3693,
       "length": 43,
       "value": "\"https:\/\/cross-storage-a.crosstoken.io\/api\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3819,
+      "offset": 3827,
       "length": 43,
       "value": "\"https:\/\/cross-storage-b.crosstoken.io\/api\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3945,
+      "offset": 3953,
       "length": 32,
       "value": "\"https:\/\/portrait.crosstoken.io\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "Array",
-      "offset": 14325,
+      "offset": 17556,
       "length": 12,
       "value": "[1007, 1008]"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "Array",
-      "offset": 14460,
+      "offset": 17691,
       "length": 16,
       "value": "[100, 101, 1001]"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 17956,
+      "offset": 21187,
       "length": 44,
       "value": "\"https:\/\/wallet-server.crosstoken.io\/api\/v2\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 21829,
+      "length": 4,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 21854,
+      "length": 68,
+      "value": "\"ONE ID login is not configured. Add the ONE ID keys to Info.plist.\""
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 28756,
+      "offset": 36325,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 36410,
+      "offset": 44487,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 38397,
+      "offset": 46915,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 47142,
+      "offset": 56088,
       "length": 12,
       "value": "\"0x3B9ACA00\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 47227,
+      "offset": 56173,
       "length": 12,
       "value": "\"0x77359400\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 61052,
+      "offset": 70571,
       "length": 6,
       "value": "30000"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 61090,
+      "offset": 70609,
       "length": 5,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 62335,
+      "offset": 71854,
       "length": 9,
       "value": "\"Account\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 63959,
+      "offset": 73594,
       "length": 9,
       "value": "\"Account\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 65238,
+      "offset": 74873,
       "length": 9,
       "value": "\"Account\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 66906,
+      "offset": 76682,
       "length": 9,
       "value": "\"Account\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 67853,
+      "offset": 77629,
       "length": 9,
       "value": "\"Account\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 70743,
+      "offset": 80519,
       "length": 8,
       "value": "\"latest\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 71865,
+      "offset": 81641,
       "length": 8,
       "value": "\"latest\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 73231,
+      "offset": 83007,
       "length": 9,
       "value": "\"pending\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 76520,
+      "offset": 86296,
       "length": 22,
       "value": "\"eth_getBlockByNumber\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 76573,
+      "offset": 86349,
       "length": 8,
       "value": "\"latest\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 76590,
+      "offset": 86366,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 76769,
+      "offset": 86545,
       "length": 59,
       "value": "\"getBaseFeePerGas failed: [\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 76809,
+      "offset": 86585,
       "length": 1,
       "value": "\"] \""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 76827,
+      "offset": 86603,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "StringLiteral",
-      "offset": 76943,
+      "offset": 86719,
       "length": 37,
       "value": "\"getBaseFeePerGas returned no result\""
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 81183,
+      "offset": 90959,
       "length": 6,
       "value": "30000"
     },
     {
       "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 81221,
+      "offset": 90997,
       "length": 5,
       "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/cross\/cicd\/actions-runner\/_work\/crossy-sdk-ios-develop\/crossy-sdk-ios-develop\/Sources\/CROSSxCoreSDK\/SDK\/ONEpocketSDK+OneId.swift",
+      "kind": "StringLiteral",
+      "offset": 1050,
+      "length": 31,
+      "value": "\"io.crosstoken.crossxsdk.oneid\""
     }
   ]
 }

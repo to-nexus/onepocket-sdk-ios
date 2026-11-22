@@ -200,3 +200,14 @@
 "error.oauth.no_token" = "No token in response";
 "error.oauth.server_error" = "Server error [%@]: %@";
 "error.oauth.session_deallocated" = "Auth session was deallocated";
+
+/* ONE ID 로그인 (3.0) */
+"error.oneid.terms_not_agreed" = "Please agree to the required ONE ID terms to continue.";
+"error.oneid.account_not_found" = "No ONE ID account was found. Please sign up first.";
+"error.oneid.service_not_linked" = "Your ONE ID account is not linked to ONEpocket yet.";
+"error.oneid.authorization_failed" = "ONE ID sign-in failed. Please try again.";
+"error.oneid.state_mismatch" = "The ONE ID sign-in response did not match the request. Please try again.";
+"error.oneid.issuer_mismatch" = "The ONE ID sign-in response came from an unexpected server.";
+"error.oneid.timeout" = "ONE ID sign-in timed out. Please try again.";
+"error.oneid.session_evicted" = "You were signed out because you signed in on another device.";
+"error.oneid.session_ended" = "Your ONE ID session has ended. Please sign in again.";

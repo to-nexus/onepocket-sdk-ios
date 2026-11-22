@@ -274,5 +274,5 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-**Version**: 2.5.1
-**Last updated**: 2026-11-06
+**Version**: 3.0.0-beta.1
+**Last updated**: 2026-11-22

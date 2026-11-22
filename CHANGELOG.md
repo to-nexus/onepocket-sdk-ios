@@ -2,6 +2,56 @@
 
 ## [Unreleased]
 
+## [3.0.0] - 배포일 미정
+
+원아이디(ONE ID) 로그인과 3.0 지갑 서버(one-wallet-api) 연동. 원아이디 키가 없는 앱은 2.x 동작이 그대로다.
+2.x 지갑을 3.0 으로 옮기는 기능은 없다(신규 회원 기준).
+
+### Added
+- **원아이디 로그인(3.0) 공개 API** (DEV2TF-2817 · 2818 · 2819 · 2820 · 2857 · 2858) — `isOneIdLoginAvailable()` ·
+  `signInWithOneId()` · `getOneIdSession()` · `signOutOneId()`, `ONEpocketOneIdSession`(userId · expiresAt · scope, 토큰은 담지 않음).
+  ONE ID PUBLIC 클라이언트로 PKCE(S256) 로그인(`ASWebAuthenticationSession`, CrossWebAuthKit) → one-oauth 토큰 교환
+  (SPEC-0015 Rule 5, `bundle_id` 앵커) → one-oauth 세션. id_token 은 `aud` · `exp` · `sub` 를 확인한다(서명 · `iss` 는 확인 안 함).
+  세션은 2.x 와 별도 Keychain service `io.crosstoken.crossxsdk.oneid` 에 두고, 만료 60초 전 갱신 · refresh 회전,
+  종료 사유(`session_evicted` · `session_revoked` · `session_expired` · 그 밖 4xx — 408 · 429 제외)면 세션을 지우고,
+  응답 없음 · 408 · 429 · 5xx 같은 일시 오류면 세션을 유지한 채 오류를 돌려준다(`getOneIdSession()` 포함). 원아이디 요청은 전용
+  네트워크로 보낸다(본문 로그 없음 · SDK 기본 헤더 없음). 사용자가 로그인 화면을 닫으면 `userRejected`, 호출한 Task 가
+  취소되거나 갱신 중 세션이 바뀌면(로그아웃 · 재로그인) `CancellationError`. 교환 뒤 정리 `/logout` 과 `signOutOneId()` 의
+  서버 호출은 호출자의 취소와 떼어 보내, 취소돼도 서버 세션이 남지 않는다
+- **원아이디 설정 Info.plist 키** — `CROSSxOneIdAuthorizeBaseURL` · `CROSSxOneIdTokenBaseURL` · `CROSSxOneIdClientId` ·
+  `CROSSxOneIdRedirectURI` · `CROSSxOneOAuthIssuer` · `CROSSxOneOAuthClientId` **여섯 개를 모두 넣거나 모두 뺀다**(기본값 없음).
+  지갑 서버 주소 `CROSSxOneWalletAPIBaseURL`(one-wallet-api `/embed/v1`, DEV2TF-2872)은 별도 키다. 키가 없거나 잘못돼도
+  SDK 초기화는 그대로 되고, 원아이디 로그인 · 지갑 호출 때 `configurationMissing` 으로 끝난다. **원아이디 키가 없는 앱은
+  2.x 동작이 그대로다**
+- **원아이디 모드 지갑** (DEV2TF-2872 · 2873 · 2874 · 2875 · 2876) — 원아이디 세션이 있으면 기존 공개 지갑 API
+  (`checkWallet` · `createWallet` · 주소 · 메시지 · typed data · 트랜잭션 서명 · 전송)가 3.0 지갑 서버(one-wallet-api)로 동작한다.
+  신규 사용자는 `createWallet()` 에서 PIN 설정 뒤 지갑을 만들고, 지갑이 있으면 PIN 없이 주소를 돌려준다. PIN 은 HPKE 인증
+  봉투와 서버 발급 키(B 키)로 보낸다. 경로는 공개 호출마다 진입 시점에 고정하며, 원아이디 세션이 끝나면(`requiresSignOut`)
+  `signOut()` · `signOutOneId()` · 재로그인 전까지 지갑 호출이 같은 오류로 끝난다(2.x 로 넘어가지 않음). 종료 사유를 원아이디
+  Keychain 에 남겨 앱을 다시 실행해도 유지한다(DEV2TF-2907, 토큰 아님). 2.x 로그인 성공도 재로그인으로 보아 이 상태를 푼다.
+  `requiresSignOut` 을 받으면 `signOut()` 또는 `signOutOneId()` 를 먼저 부르는 것을 권장한다. 메모리 PIN 은 15분 재사용하되
+  권한 위임 요청(approve · setApprovalForAll · increaseAllowance · Permit2 approve, Permit 계열 typedData)과
+  해석할 수 없는 typedData 는 매번 다시 묻는다. 지갑 서버 401 은 `tokenExpired`(로그아웃 신호 아님).
+  `from` 이 없는 트랜잭션은 지갑 주소(index 0)로 nonce 를 채운다. 원아이디 모드에서 `getUserInfo()` 는 `notImplemented`
+  (사용자 id 는 `getOneIdSession().userId`)
+- `ONEpocketError`에 원아이디 오류 11종 (공개 API 추가, DEV2TF-2821) — `oneIdTermsNotAgreed` ·
+  `oneIdAccountNotFound` · `oneIdServiceNotLinked` · `oneIdAuthorizationFailed(error:)` · `oneIdStateMismatch` ·
+  `oneIdIssuerMismatch`(현재 `iss` 를 확인하지 않아 발생하지 않음) · `oneIdTimeout` · `oneIdSessionEvicted` · `oneIdSessionRevoked` · `oneIdSessionExpired` ·
+  `oneIdSessionInvalid`. `errorCode`는 JS SDK와 같은 `ONEID_*`, 세션 종료 4종은 `requiresSignOut == true`.
+  **`ONEpocketError`를 빠짐없이 `switch`하는 호스트는 `default` 처리가 필요하다**
+- `URLSessionAdapter.init(session:defaultTimeout:defaultHeaders:logsBodies:)` — Debug 로그에 요청 · 응답 본문을 남길지.
+  기존 init 은 그대로 둔다(바이너리 호환)
+- 원아이디 모드 PIN 확인 · 변경 · 반출 · 주소 이름 · 지갑 삭제 (DEV2TF-2892) — one-wallet-api `pin/verify` · `PUT pin` ·
+  `exports`(니모닉 · 개인키) · `PATCH addresses` · `DELETE /wallets/{addr}`(command `delete` 16). 공개 `verifyPassword` ·
+  `changePassword` · `exportMnemonic` · `exportPrivateKey` · `setAddressNames` 가 원아이디 세션이면 이 경로로 동작하고,
+  `ONEpocketPrivateSDK` 의 니모닉 · 개인키 열람 · PIN 변경 · 탈퇴도 원아이디 모드를 지원한다(매번 Enter PIN 모달, Keychain 미사용,
+  탈퇴는 지갑 영구 삭제 뒤 원아이디 로그아웃). `ONEpocketSDKContext.oneWallet`(`ONEpocketOneWalletPrivateOperations`) 추가.
+  share C · 복구 · 2.x 지갑 전환은 원아이디 모드에서 계속 `NOT_IMPLEMENTED`
+
+### Changed
+- `signOut()` 이 원아이디 세션도 끝낸다 — 순서: 원아이디 지갑 상태 · B 키 폐기 → 원아이디 로그아웃 → 메모리 PIN →
+  기존 2.x 정리. 원아이디 세션과 2.x 토큰이 함께 있으면 지갑 호출은 원아이디가 우선이며 2.x 토큰은 지우지 않는다
+
 ## [2.5.1] - 2026-11-06
 
 이행점검(2026-10-15) 잔존 Medium 3건 조치, SkipConfirm PIN 폴백, 니모닉·개인키 조회 PIN 강제 옵션.

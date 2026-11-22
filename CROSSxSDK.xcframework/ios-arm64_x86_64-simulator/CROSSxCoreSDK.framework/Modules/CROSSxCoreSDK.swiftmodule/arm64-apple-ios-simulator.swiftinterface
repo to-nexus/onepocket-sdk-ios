@@ -320,6 +320,33 @@ public enum L10n {
   public static var errorWalletInconsistentState: Swift::String {
     get
   }
+  public static var errorOneIdTermsNotAgreed: Swift::String {
+    get
+  }
+  public static var errorOneIdAccountNotFound: Swift::String {
+    get
+  }
+  public static var errorOneIdServiceNotLinked: Swift::String {
+    get
+  }
+  public static var errorOneIdAuthorizationFailed: Swift::String {
+    get
+  }
+  public static var errorOneIdStateMismatch: Swift::String {
+    get
+  }
+  public static var errorOneIdIssuerMismatch: Swift::String {
+    get
+  }
+  public static var errorOneIdTimeout: Swift::String {
+    get
+  }
+  public static var errorOneIdSessionEvicted: Swift::String {
+    get
+  }
+  public static var errorOneIdSessionEnded: Swift::String {
+    get
+  }
   public static var errorHmacSignatureMissing: Swift::String {
     get
   }
@@ -411,7 +438,8 @@ final public class AuthenticatedNetworkAdapter : CROSSxCoreSDK::NetworkPort, @un
   @objc deinit
 }
 final public class URLSessionAdapter : CROSSxCoreSDK::NetworkPort, @unchecked Swift::Sendable {
-  public init(session: Foundation::URLSession = .shared, defaultTimeout: Foundation::TimeInterval = 30, defaultHeaders: [Swift::String : Swift::String] = [:])
+  convenience public init(session: Foundation::URLSession = .shared, defaultTimeout: Foundation::TimeInterval = 30, defaultHeaders: [Swift::String : Swift::String] = [:])
+  public init(session: Foundation::URLSession = .shared, defaultTimeout: Foundation::TimeInterval = 30, defaultHeaders: [Swift::String : Swift::String] = [:], logsBodies: Swift::Bool)
   final public func request(url: Swift::String, method: CROSSxCoreSDK::HTTPMethod, headers: [Swift::String : Swift::String]?, body: Foundation::Data?) async throws -> Foundation::Data
   final public func request(url: Swift::String, method: CROSSxCoreSDK::HTTPMethod, headers: [Swift::String : Swift::String]?, body: Foundation::Data?, timeout: Foundation::TimeInterval) async throws -> Foundation::Data
   @objc deinit
@@ -719,6 +747,10 @@ public enum Log {
 public enum SdkErrorMapper {
   public static func mapBackendError(code: Swift::Int, message: Swift::String, rawJSON: [Swift::String : Any]? = nil) -> CROSSxCoreSDK::ONEpocketError
 }
+extension CROSSxCoreSDK::SdkErrorMapper {
+  public static func mapOneIdAuthorizationError(_ error: Swift::String) -> CROSSxCoreSDK::ONEpocketError
+  public static func mapOneIdSessionEndReason(_ reason: Swift::String?) -> CROSSxCoreSDK::ONEpocketError
+}
 public actor TokenStore {
   public init(storage: (any CROSSxCoreSDK::StoragePort)? = nil, refreshHandler: @escaping (Swift::String, Swift::String) async throws -> CROSSxCoreSDK::RefreshResult)
   public func validAccessToken() async throws -> Swift::String
@@ -965,6 +997,17 @@ public enum ONEpocketError : Foundation::LocalizedError, Swift::Sendable {
   case invalidAppType(Swift::String)
   case domainChainIdMismatch(Swift::String)
   case apiError(code: Swift::Int, message: Swift::String)
+  case oneIdTermsNotAgreed
+  case oneIdAccountNotFound
+  case oneIdServiceNotLinked
+  case oneIdAuthorizationFailed(error: Swift::String?)
+  case oneIdStateMismatch
+  case oneIdIssuerMismatch
+  case oneIdTimeout
+  case oneIdSessionEvicted
+  case oneIdSessionRevoked
+  case oneIdSessionExpired
+  case oneIdSessionInvalid
   public var errorDescription: Swift::String? {
     get
   }
@@ -1600,6 +1643,8 @@ public struct ONEpocketSDKContext : Swift::Sendable {
   public let hmacKeyHolder: CROSSxCoreSDK::HMACKeyHolder
   public let themeProvider: CROSSxCoreSDK::ThemeProvider
   public let pinEncryptor: any CROSSxCoreSDK::PinEncryptorPort
+  public let requireLegacyWalletMode: @Sendable () async throws -> Swift::Void
+  public let oneWallet: CROSSxCoreSDK::ONEpocketOneWalletPrivateOperations
 }
 extension CROSSxCoreSDK::ONEpocketSDK {
   final public func makePrivateContext() -> CROSSxCoreSDK::ONEpocketSDKContext
@@ -1608,6 +1653,26 @@ extension CROSSxCoreSDK::ONEpocketSDK {
 public typealias CROSSxSDK = CROSSxCoreSDK::ONEpocketSDK
 @available(*, deprecated, renamed: "ONEpocketSDKContext")
 public typealias CROSSxSDKContext = CROSSxCoreSDK::ONEpocketSDKContext
+public struct ONEpocketOneIdSession : Swift::Equatable, Swift::Sendable {
+  public let userId: Swift::String
+  public let expiresAt: Foundation::Date
+  public let scope: Swift::String?
+  public static func == (a: CROSSxCoreSDK::ONEpocketOneIdSession, b: CROSSxCoreSDK::ONEpocketOneIdSession) -> Swift::Bool
+}
+extension CROSSxCoreSDK::ONEpocketSDK {
+  final public func isOneIdLoginAvailable() -> Swift::Bool
+  final public func signInWithOneId() async throws -> CROSSxCoreSDK::ONEpocketOneIdSession
+  final public func getOneIdSession() async throws -> CROSSxCoreSDK::ONEpocketOneIdSession?
+  final public func signOutOneId() async
+}
+public struct ONEpocketOneWalletPrivateOperations : Swift::Sendable {
+  public let isActive: @Sendable () async throws -> Swift::Bool
+  public let verifyPin: @Sendable (_ pin: Swift::String) async throws -> Swift::Void
+  public let changePin: @Sendable (_ currentPin: Swift::String, _ newPin: Swift::String) async throws -> Swift::Void
+  public let exportMnemonic: @Sendable (_ pin: Swift::String) async throws -> Swift::String
+  public let exportPrivateKey: @Sendable (_ pin: Swift::String, _ index: Swift::Int) async throws -> Swift::String
+  public let deleteWallet: @Sendable (_ pin: Swift::String) async throws -> Swift::Void
+}
 extension CROSSxCoreSDK::MigrationPresenter.CROSSxCoreSDK::PromptResult : Swift::Equatable {}
 extension CROSSxCoreSDK::MigrationPresenter.CROSSxCoreSDK::PromptResult : Swift::Hashable {}
 extension CROSSxCoreSDK::TransactionConfirmationDetails.CROSSxCoreSDK::ActionType : Swift::Equatable {}

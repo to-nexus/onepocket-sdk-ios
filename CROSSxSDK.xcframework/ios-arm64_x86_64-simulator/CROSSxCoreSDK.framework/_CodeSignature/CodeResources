@@ -14,43 +14,43 @@
 		</data>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		VmqXE2KQ2AlEXq9O2F9UaN3xd08=
+		W/YHIjv9hAwxuPDkzNCco9t/2UU=
 		</data>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Tj/CU6AKxRCUZ+qZE0TRCe+v+4s=
+		0omb648f2fe+hc+hGX2XwQV25rI=
 		</data>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		6HfxjDlb4sdITX7CezKF06K+ibY=
+		GK2x3f/hjSiJSx/2zXA7gLPTNR8=
 		</data>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Tj/CU6AKxRCUZ+qZE0TRCe+v+4s=
+		0omb648f2fe+hc+hGX2XwQV25rI=
 		</data>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2Zw0Xi9f1P47i5tgXuth8MKGfTs=
+		Ik38+bDonOrUpG9EM2XsThKopSc=
 		</data>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		VmqXE2KQ2AlEXq9O2F9UaN3xd08=
+		W/YHIjv9hAwxuPDkzNCco9t/2UU=
 		</data>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		YWQXDdu4V405ilBg5qQrLDwLL3w=
+		eA12Fy4qL4a6C7zyI+Ytt9FqbTQ=
 		</data>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vTKmxSOjyxXrUQ+r2GqYyPnBfUE=
+		C36+wFDGM0kFoCgtFIPVrZIRT0U=
 		</data>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		YWQXDdu4V405ilBg5qQrLDwLL3w=
+		eA12Fy4qL4a6C7zyI+Ytt9FqbTQ=
 		</data>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EUy/cchsOVaeEb7FCKCd4CEH0KM=
+		VkxLpm1bQe8kC3YVqsfUSFOjKdI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,70 +70,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FqYHZk+NehcrodNkbjP7iFaAG5oe4VOYmkqGcSlQ/Zc=
+			v8Ou9qJbYfXNCvp/6tSpU4u/Qm9uvNf+M8AyEkSdYxY=
 			</data>
 		</dict>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hP7qQxpl0GBfVh7mcAClMqd3AozIpXL2xSB6CTTEruU=
+			ssRHFubW7mNUQhaJ65wmP3AXdft9wIYQmJHvD4GITao=
 			</data>
 		</dict>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ovYPS4EKRHmYwDlOEwngvv7M+mbCopB82NTj7IHUwB4=
+			dgdTKBMQ9lFYQYHsxz5uHQhv/ubglBpqtQXX7Y7ufC0=
 			</data>
 		</dict>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hP7qQxpl0GBfVh7mcAClMqd3AozIpXL2xSB6CTTEruU=
+			ssRHFubW7mNUQhaJ65wmP3AXdft9wIYQmJHvD4GITao=
 			</data>
 		</dict>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FKFkziOx6QOmsK//+Y9ycEPDG1QSdI3GrlH8tGZDJ/s=
+			8nk7Fm++ZAkOioWzfNlVaIKvuXHVUfTWSRJZlfacBEI=
 			</data>
 		</dict>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FqYHZk+NehcrodNkbjP7iFaAG5oe4VOYmkqGcSlQ/Zc=
+			v8Ou9qJbYfXNCvp/6tSpU4u/Qm9uvNf+M8AyEkSdYxY=
 			</data>
 		</dict>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u5UYL30/sD1Ey+BD58tbC/IBklJBSKPma411pdwlSRE=
+			llf1xxgBR5wQKoNPxJacYwAKrNsLKnjNrxCZG73Ch2w=
 			</data>
 		</dict>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W2cUtgYOS3PvYsbhTn32pCJZX6771v9VCq0+8GJL9GQ=
+			/4poG3tFhP9Jkd9ZtCs41INX8yfoWhCHN7NP9pshwmk=
 			</data>
 		</dict>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u5UYL30/sD1Ey+BD58tbC/IBklJBSKPma411pdwlSRE=
+			llf1xxgBR5wQKoNPxJacYwAKrNsLKnjNrxCZG73Ch2w=
 			</data>
 		</dict>
 		<key>Modules/CROSSxCoreSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zBr8dg0a3wcIvk35A2YYYmWhMIq3OlxRdSIVmJF7tSs=
+			VzHN3XDJpx7DPERu490+VRoIAUP8qtzDbFPDqtusVmo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
